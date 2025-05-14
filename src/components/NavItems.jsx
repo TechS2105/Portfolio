@@ -24,7 +24,7 @@ function Navitem({ logo }) {
                             <ul>
 
                                 <li><AnchorLink offset={100} href='#home'> HOME </AnchorLink></li>
-                                <li><AnchorLink offset={100} href='#about'> ABOUT  </AnchorLink></li>
+                                <li><AnchorLink offset={90} href='#about'> ABOUT  </AnchorLink></li>
                                 <li><AnchorLink offset={100} href='#education'> EDUCATION  </AnchorLink></li>
                                 <li><AnchorLink offset={100} href='#skills'> SKILLS  </AnchorLink></li>
                                 <li><AnchorLink offset={100} href='#experience'> EXPERIENCE  </AnchorLink></li>
