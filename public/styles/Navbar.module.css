@@ -1,0 +1,138 @@
+@font-face {
+    font-family: portfoliofont;
+    src: url('../fonts/korplex/Korplex\ Regular.ttf');
+}
+
+*{
+
+    font-family: 'portfoliofont';
+
+}
+
+.header{
+
+    width: 100%;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    background-color: #f8f8f8;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.158);
+
+}
+
+.header > .container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 100%;
+
+}
+
+.logo{
+
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo > h1{
+
+    font-family: 'portfoliofont';
+    color: #292929;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 100;
+
+}
+
+.menu{
+
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu > nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+nav > ul {
+
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    list-style-type: none;
+    font-weight: 100;
+    gap: 50px;
+
+}
+
+ul > li{
+
+    letter-spacing: 2px;
+
+}
+
+ul li > a{
+
+    text-decoration: none;
+    color: #292929;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s ease;
+
+}
+
+ul li > a::before{
+
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #292929;
+    /* top: 0; */
+   
+    transition: all 0.8s ease;
+    z-index: -2;
+
+}
+
+ul li > a:hover{
+
+    color: #fff;
+
+}
+
+ul li > a:hover::before{
+
+    width: 100%;
+    height: 100%;
+    padding: 5px 15px;
+
+}
+
+
+
+
+

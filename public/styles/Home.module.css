@@ -1,0 +1,95 @@
+@font-face {
+    font-family: portfoliofonthome;
+    src: url('../fonts/gridstar-font/GridstarRegular-ovOax.otf');
+}
+
+.container{
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container > .container1{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container1 > .textsection{
+
+    padding-left: 20px;
+
+}
+
+.textsection > span{
+
+    font-size: 40px;
+    font-family: 'portfoliofonthome';
+
+}
+
+.textsection > h1{
+
+    font-size: 100px;
+    letter-spacing: 5px;
+    font-family: 'portfoliofonthome';
+
+}
+
+.textsection > p{
+
+    font-size: 17px;
+    letter-spacing: 5px;
+    font-family: 'portfoliofonthome';
+
+}
+
+.textsection > .sociallinks{
+
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+
+}
+
+.sociallinks > a{
+
+    font-size: 30px;
+    color: #292929;
+    transition: all 0.5s ease;
+
+}
+
+.sociallinks > a:hover{
+
+    transform: scale(1.5);
+
+}
+
+.container > .container2{
+
+    width: 50%;
+    height: 100%;
+    position: relative;
+
+}
+
+.container2 > img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(100%) contrast(100%);
+    position: absolute;
+    z-index: -2;
+
+}
