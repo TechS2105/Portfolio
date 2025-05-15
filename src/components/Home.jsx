@@ -41,6 +41,7 @@ function Home() {
 
         transform: "translateY(1000px)",
         filter: "blur(50px)",
+        border: "none"
 
     });
 
@@ -136,6 +137,7 @@ function Home() {
                     transform: "translateY(0px)",
                     transition: "all 0.8s ease",
                     filter: "blur(0px)",
+                    border: "10px double  #efcb55",
         
                 })
 

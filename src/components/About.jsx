@@ -1,16 +1,78 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Container from '../components/Container';
+import AboutStyle from '../../public/styles/About.module.css';
+
+let image = "../../public/images/aboutimage1.jpg";
 
 function About() {
+
+    const [imageAnimation, setImageAnimation] = useState({
+
+        transform: "scale(0)",
+        filter: "blur(50px)"
+
+    });
+
+    function handelScroll() {
+        
+        if (window.scrollY > 500) {
+            
+            setImageAnimation({
+
+                transform: "scale(1) rotateY(360deg)",
+                transition: "all 0.8s ease",
+                filter: "blur(0px)"
+
+            })
+
+        } else {
+            
+            setImageAnimation({
+
+                transform: "scale(0)",
+                transition: "all 0.8s ease",
+                filter: "blur(50px)"
+
+            })
+
+        }
+
+    }
+
+    useEffect(() => {
+
+        window.addEventListener("scroll", handelScroll);
+
+    });
     
     return (
-        
         <Container>
+            
+            <div className={AboutStyle.aboutcontainer} id='about' onScroll={handelScroll}>
+                
+                <div className={AboutStyle.aboutsection1}>
+                    
+                    <img src={image} style={imageAnimation}/>
 
-            <h1 id='about'> About Us </h1>
+                </div>
+                <div className={AboutStyle.aboutsection2}>
 
-        </Container>
+                    <div className={AboutStyle.aboutcontent}>
 
+                        <h2> About <br/> <span className={AboutStyle.aboutSpanText}> Me  </span>  </h2> 
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere fuga deleniti aliquam itaque perspiciatis, expedita aliquid totam officiis, numquam, obcaecati dolores aut! Non debitis consequatur quae voluptatem maiores, veritatis labore.<br/><br/>
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit beatae numquam perferendis magnam dolor vel obcaecati exercitationem, dolorum nostrum rerum nesciunt quam sequi odio quos autem! Quidem dolores distinctio tenetur?
+                        </p>
+
+                        <button><a href="../../public/files/Sovan Sundar Dey Resume.pdf" target='_blank'> Know More About Me </a></button>
+                        
+                    </div>
+
+                </div>
+            </div>
+            
+      </Container>
     );
 
 }

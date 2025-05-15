@@ -1,11 +1,12 @@
 @font-face {
     font-family: portfoliofont;
-    src: url('../fonts/korplex/Korplex\ Regular.ttf');
+    src: url('../fonts/lato/Lato-Semibold.ttf');
 }
 
-*{
+@font-face{
 
-    font-family: 'portfoliofont';
+    font-family: logofont;
+    src: url('../fonts/rockia-font/RockiaRegular-gw561.otf');
 
 }
 
@@ -43,9 +44,9 @@
 
 .logo > h1{
 
-    font-family: 'portfoliofont';
+    font-family: 'logofont';
     color: #292929;
-    font-size: 30px;
+    font-size: 50px;
     letter-spacing: 5px;
     font-weight: 100;
 
@@ -58,6 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'portfoliofont';
 
 }
 
@@ -73,7 +75,7 @@
 
 nav > ul {
 
-    font-size: 16px;
+    font-size: 15px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -121,7 +123,7 @@ ul li > a::before{
 
 ul li > a:hover{
 
-    color: #fff;
+    color: #fcfaea;
 
 }
 
