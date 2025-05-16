@@ -59,7 +59,7 @@ function Home() {
     
     const [sociallink3, setSociallink3] = useState({
 
-        transform: "translateY(-50px)"
+        transform: "translateY(-50px)",
 
     });
 
@@ -77,7 +77,7 @@ function Home() {
 
                 });
 
-            }, 1000)
+            }, 1800)
 
         }, []);
 
@@ -93,7 +93,7 @@ function Home() {
 
                 })
 
-            }, 500)
+            }, 1500)
 
         });
 
@@ -108,7 +108,7 @@ function Home() {
 
                 })
 
-            }, 1200)
+            }, 2000)
 
         });
 
@@ -124,7 +124,7 @@ function Home() {
 
                 })
 
-            }, 1300)
+            }, 2100)
 
         });
 
@@ -141,7 +141,7 @@ function Home() {
         
                 })
 
-            }, 1000)
+            }, 2000)
 
         });
 
@@ -156,7 +156,7 @@ function Home() {
 
                 });
 
-            }, 1500)
+            }, 2100)
 
         });
 
@@ -171,7 +171,7 @@ function Home() {
 
                 })
 
-            }, 1500)
+            }, 2100)
 
         });
 
@@ -186,7 +186,7 @@ function Home() {
 
                 })
 
-            }, 1500);
+            }, 2100);
 
         })
 
