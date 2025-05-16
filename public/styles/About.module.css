@@ -85,6 +85,31 @@
     font-family: 'aboutheadingfont';
     letter-spacing: 2px;
     font-size: 13px;
+    position: relative;
+    border: none;
+    outline: none;
+
+}
+
+
+
+.aboutcontent > button::before{
+
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #efcb55;
+    content: "";
+    transition: all 0.8s ease;
+
+}
+
+.aboutcontent > button:hover::before{
+
+    width: 100%;
 
 }
 
@@ -92,6 +117,13 @@
 
     color:#292929;
     text-decoration: none;
+    transition: all 0.5s ease;
+
+}
+
+.aboutcontent > button a:hover{
+
+    color: #fcfaea;
 
 }
 

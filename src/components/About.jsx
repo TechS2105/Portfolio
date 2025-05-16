@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Container from '../components/Container';
 import AboutStyle from '../../public/styles/About.module.css';
 
-let image = "../../public/images/aboutimage1.jpg";
+let image = "../../public/images/image4.jpg";
 
 function About() {
 
@@ -18,7 +18,28 @@ function About() {
         transform: "translateX(-1000px)",
         filter: "blur(50px)",
 
-    })
+    });
+
+    const [aboutpara1, setFirstAboutPara] = useState({
+
+        transform: "translateX(-1000px)",
+        filter: "blur(50px)",
+
+    });
+
+    const [aboutpara2, setSecondAboutPara] = useState({
+
+        transform: "translateX(-1000px)",
+        filter: "blur(50px)",
+
+    });
+
+    const [aboutbtn, setAboutBtn] = useState({
+
+        transform: "translateX(-1000px)",
+        filter: "blur(50px)"
+
+    });
 
     function handelScroll() {
         
@@ -36,9 +57,33 @@ function About() {
 
                 transform: "translateX(0px)",
                 filter: "blur(0px)",
+                transition: "all 0.8s ease 0.3s"
+
+            });
+
+            setFirstAboutPara({
+
+                transform: "translateX(0px)",
+                filter: "blur(0px)",
+                transition: "all 0.8s ease 0.4s"
+
+            });
+
+            setSecondAboutPara({
+
+                transform: "translateX(0px)",
+                filter: "blur(0px)",
                 transition: "all 0.8s ease 0.5s"
 
-            })
+            });
+
+            setAboutBtn({
+
+                transform: "translateX(0px)",
+                filter: "blur(0px)",
+                transition: "all 0.8s ease 0.6s"
+                
+            });
 
         } else {
             
@@ -53,10 +98,34 @@ function About() {
             setAboutHeading({
 
                 transform: "translateX(-1000px)",
-                transition: "all 0.8s ease",
+                transition: "all 0.8s ease 0.5s",
                 filter: "blur(50px)",
 
-            })
+            });
+
+            setFirstAboutPara({
+
+                transform: "translateX(-1000px)",
+                transition: "all 0.8s ease 0.4s",
+                filter: "blur(50px)"
+
+            });
+
+            setSecondAboutPara({
+
+                transform: "translateX(-1000px)",
+                transition: "all 0.8s ease 0.3s",
+                filter: "blur(50px)"
+
+            });
+
+            setAboutBtn({
+
+                transform: "translateX(-1000px)",
+                transition: "all 0.8s ease 0.2s",
+                filter: "blur(50px)"
+
+            });
 
         }
 
@@ -66,7 +135,7 @@ function About() {
 
         window.addEventListener("scroll", handelScroll);
 
-    });
+    }, []);
     
     return (
         <Container>
@@ -82,13 +151,14 @@ function About() {
 
                     <div className={AboutStyle.aboutcontent}>
 
-                        <h2 style={aboutHeading}> About <br/> <span className={AboutStyle.aboutSpanText}> Me  </span>  </h2> 
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere fuga deleniti aliquam itaque perspiciatis, expedita aliquid totam officiis, numquam, obcaecati dolores aut! Non debitis consequatur quae voluptatem maiores, veritatis labore.<br/><br/>
+                        <h2 style={aboutHeading}> About <br /> <span className={AboutStyle.aboutSpanText}> Me  </span>  </h2> 
+                        
+                        <p style={aboutpara1}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere fuga deleniti aliquam itaque perspiciatis, expedita aliquid totam officiis, numquam, obcaecati dolores aut! Non debitis consequatur quae voluptatem maiores, veritatis labore.</p>
 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit beatae numquam perferendis magnam dolor vel obcaecati exercitationem, dolorum nostrum rerum nesciunt quam sequi odio quos autem! Quidem dolores distinctio tenetur?
+                        <p style={aboutpara2}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit beatae numquam perferendis magnam dolor vel obcaecati exercitationem, dolorum nostrum rerum nesciunt quam sequi odio quos autem! Quidem dolores distinctio tenetur?
                         </p>
 
-                        <button><a href="../../public/files/Sovan Sundar Dey Resume.pdf" target='_blank'> Know More About Me </a></button>
+                        <button style={aboutbtn}><a href="../../public/files/Sovan Sundar Dey Resume.pdf" target='_blank'> Know More About Me </a></button>
                         
                     </div>
 

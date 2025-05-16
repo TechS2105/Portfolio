@@ -100,7 +100,7 @@ function SiteLoader() {
 
             });
 
-        });
+        }, []);
 
     }
     

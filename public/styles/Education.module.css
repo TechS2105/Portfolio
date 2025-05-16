@@ -1,0 +1,342 @@
+@font-face {
+    font-family: educationfont;
+    src: url('../fonts/gridstar-font/GridstarRegular-ovOax.otf');
+}
+
+@font-face {
+    font-family: educationtextfont;
+    src: url('../fonts/lato/Lato-Medium.ttf');
+}
+
+.educationContainer{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: linear-gradient(270deg, #efcb55 50%, #292929 50%);
+    overflow: hidden;
+
+}
+
+.subEducationContainer1{
+
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow-wrap: anywhere;
+
+}
+
+.subEducationContainer1::after{
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 6px;
+    height: 100%;
+    content: "";
+    background-color: #efcb55;
+
+}
+
+.subEducationContainer1::before{
+
+    position: absolute;
+
+}
+
+.subEducationContainer1 > .educationContent{
+
+    position: relative;
+    padding: 10px 35px;
+
+}
+
+.educationContent::after{
+
+    position: absolute;
+    top: 30px;
+    right: 43%;
+    z-index: 2;
+    content: "2023";
+    width: 100px;
+    height: 50px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border: 4px solid #efcb55;
+    background-color: #fcfaea;
+    font-size: 25px;
+    padding-right: 5px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'educationfont';
+    letter-spacing: 3px;
+
+}
+
+.educationContent > .educationContentBox{
+
+    position: relative;
+    right: 20px;
+    width: 300px;
+    height: 200px;
+    top: 20px;
+
+}
+
+.educationContentBox > h3{
+
+    text-align: right;
+    color: #efcb55;
+    font-family: 'educationfont';
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 18px;
+
+}
+
+.educationContentBox > p{
+
+    color: #fcfaea;
+    font-family: 'educationtextfont';
+    text-align: right;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 2px;
+
+}
+
+/** Timeline 2 */
+.subEducationContainer1 > .educationContent2{
+
+    position: relative;
+    padding: 10px 40px;
+
+}
+
+.educationContent2::after{
+
+    position: absolute;
+    top: -10px;
+    right: 42%;
+    z-index: 2;
+    content: "2020";
+    background-color: #fcfaea;
+    border: #efcb55;
+    height: 50px;
+    width: 100px;
+    border: 5px solid #efcb55;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    font-family: 'educationfont';
+    font-size: 25px;
+    padding-left: 5px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    letter-spacing: 3px;
+
+}
+
+
+.educationContent2 > .educationContentBox2{
+
+    position: relative;
+    right: -60%;
+    width: 300px;
+    height: 200px;
+    top: -30px;
+
+}
+
+.educationContentBox2 > h3{
+
+    font-family: 'educationfont';
+    color: #efcb55;
+    line-height: 25px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-align: left;
+
+}
+
+.educationContentBox2 > p{
+
+    font-family: 'educationtextfont';
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fcfaea;
+    line-height: 25px;
+
+}
+
+.subEducationContainer2{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+/** Timeline 3*/
+
+.subEducationContainer1 > .educationContent3{
+
+    position: relative;
+    padding: 10px 40px;
+
+}
+
+.educationContent3::after{
+
+    position: absolute;
+    top: -30px;
+    right: 42%;
+    z-index: 2;
+    background-color: #fcfaea;
+    height: 50px;
+    width: 100px;
+    content: "2017";
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border: 5px solid #efcb55;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'educationfont';
+    font-size: 25px;
+    padding-right: 5px;
+    font-style: italic;
+    letter-spacing: 3px;
+
+}
+
+.educationContent3 > .educationContentBox3{
+
+    position: relative;
+    top: -35px;
+    right: 20px;
+    width: 300px;
+    height: 200px;
+    text-align: right;
+
+}
+
+.educationContentBox3 > h3{
+
+    font-size: 18px;
+    font-family: 'educationfont';
+    letter-spacing: 2px;
+    color: #efcb55;
+    line-height: 25px;
+
+}
+
+.educationContentBox3 > p{
+
+    font-size: 15px;
+    color: #fcfaea;
+    font-family: 'educationtextfont';
+    letter-spacing: 2px;
+    line-height: 25px;
+
+}
+
+/** Timeline 4 */
+
+.subEducationContainer1 > .educationContent4{
+
+    position: relative;
+    padding: 10px 40px;
+
+}
+
+.educationContent4::after{
+
+    position: absolute;
+    top: -50px;
+    right: 42%;
+    z-index: 2;
+    content: "2015";
+    background-color: #fcfaea;
+    height: 50px;
+    width: 100px;
+    border: 5px solid #efcb55;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'educationfont';
+    font-size: 25px;
+    padding-left: 5px;
+    font-style: italic;
+    letter-spacing: 3px;
+
+}
+
+.educationContent4 > .educationContentBox4{
+
+    position: relative;
+    top: -70px;
+    right: -60%;
+    width: 300px;
+    height: 200px;
+    text-align: left;
+
+}
+
+.educationContentBox4 > h3{
+
+    font-family: 'educationfont';
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: #efcb55;
+
+}
+
+.educationContentBox4 > p{
+
+    font-family: 'educationtextfont';
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #fcfaea;
+    line-height: 25px;
+
+}
+
+/** Second Container Box */
+
+.subEducationContainer2 > .educationHeading{
+
+    font-family: 'educationfont';
+    font-size: 80px;
+    line-height: 120px;
+    letter-spacing: 3px;
+
+}
+
+.educationHeading > .spanNameBox{
+
+    overflow: hidden;
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.spanNameBox > span{
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}

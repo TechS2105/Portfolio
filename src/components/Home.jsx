@@ -95,7 +95,7 @@ function Home() {
 
             }, 1500)
 
-        });
+        }, []);
 
         useEffect(() => {
 
@@ -110,7 +110,7 @@ function Home() {
 
             }, 2000)
 
-        });
+        }, []);
 
         useEffect(() => {
 
@@ -143,7 +143,7 @@ function Home() {
 
             }, 2000)
 
-        });
+        }, []);
 
         useEffect(() => {
 
@@ -158,7 +158,7 @@ function Home() {
 
             }, 2100)
 
-        });
+        }, []);
 
         useEffect(() => {
 
@@ -173,7 +173,7 @@ function Home() {
 
             }, 2100)
 
-        });
+        }, []);
 
         useEffect(() => {
 
@@ -188,7 +188,7 @@ function Home() {
 
             }, 2100);
 
-        })
+        }, [])
 
     }
     

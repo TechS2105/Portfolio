@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import SiteLoader from './components/Siteloader';
 import Home from './components/Home';
 import About from './components/About';
+import Education from './components/Education';
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Education />
           
     </>
 
