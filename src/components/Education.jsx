@@ -89,7 +89,7 @@ function Education() {
 
     }
 
-    const [yearAnimation, setYearAnimation1] = useState({
+    const [yearAnimation1, setYearAnimation1] = useState({
 
         transform: "translateY(-500px)",
         filter: "blur(20px)"
@@ -101,6 +101,48 @@ function Education() {
         transform: "translateX(-1000px)",
         filter: "blur(20px)"
 
+    });
+
+    const [yearAnimation2, setYearAnimation2] = useState({
+
+        transform: "translateY(-1000px)",
+        filter: "blur(20px)"
+
+    });
+
+    const [secondContentStyle, setSecondContentStyle] = useState({
+
+        transform: "translateX(1000px)",
+        filer: "blur(20px)"
+
+    });
+
+    const [yearAnimation3, setYearAnimation3] = useState({
+
+        transform: "translateY(-1500px)",
+        filter: "blur(50px)",
+
+    });
+
+    const [thirdContentStyle, setThirdContentStyle] = useState({
+
+        transform: "translateX(-500px)",
+        filter: "blur(50px)",
+
+    });
+
+    const [yearAnimation4, setYearAnimation4] = useState({
+
+        transform: "translateY(-2000px)",
+        filter: "blur(50px)"
+
+    });
+
+    const [fourthContentStyle, setFourthContentStyle] = useState({
+
+        transform: "translateX(1000px)",
+        filter: "blur(50px)",
+
     })
 
     function subEducationScrollAnimation() {
@@ -109,10 +151,11 @@ function Education() {
             
             if (window.scrollY > 1300) {
                 
+                // first year section 
                 setYearAnimation1({
 
                     transform: "translateY(0px)",
-                    transition: "all 0.8s ease",
+                    transition: "all 0.8s ease 0.5s",
                     zIndex: "2",
                     filter: "blur(0px)"
 
@@ -121,17 +164,71 @@ function Education() {
                 setFirstContentStyle({
 
                     transform: "translateX(0px)",
-                    transition: "all 0.8s ease 0.5s",
+                    transition: "all 0.8s ease 2s",
                     filter: "blur(0px)"
 
                 });
 
+                // second year section
+                setYearAnimation2({
+
+                    transform: "translateY(0px)",
+                    transition: "all 0.8s ease 0.8s",
+                    filter: "blur(0px)",
+                    zIndex: 2
+
+                });
+
+                setSecondContentStyle({
+
+                    transform: "translateX(0px)",
+                    transition: "all 0.8s ease 2s"
+
+                });
+
+                // third year section
+                setYearAnimation3({
+
+                    transform: "translateY(0px)",
+                    transition: "all 0.8s ease 1.1s",
+                    filter: "blur(0px)",
+                    zIndex: "2"
+
+                });
+
+                setThirdContentStyle({
+
+                    transform: "translateX(0px)",
+                    filter: "blur(0px)",
+                    transition: "all 0.8s ease 2s",
+
+                });
+
+                // fourth year section
+                setYearAnimation4({
+
+                    transform: "translateY(0px)",
+                    filter: "blur(0px)",
+                    zIndex: "2",
+                    transition: "all 0.8s ease 1.4s"
+
+                });
+
+                setFourthContentStyle({
+
+                    transform: "translateX(0px)",
+                    filter: "blur(0px)",
+                    transition: "all 0.8s ease 2s"
+
+                })
+
             } else {
                 
+                // first year section
                 setYearAnimation1({
 
                     transform: "translateY(-500px)",
-                    transition: "all 0.8s ease 0.2s",
+                    transition: "all 0.8s ease",
                     zIndex: "-2",
                     filter: "blur(50px)",
 
@@ -141,7 +238,61 @@ function Education() {
 
                     transform: "translateX(-1000px)",
                     transition: "all 0.8s ease",
+                    filter: "blur(50px)",
+
+                });
+
+                // second year section
+                setYearAnimation2({
+
+                    transform: "translateY(-1000px)",
+                    transition: "all 0.8s ease 0.2s",
+                    filter: "blur(50px)",
+                    zIndex: "2"
+
+                });
+
+                setSecondContentStyle({
+
+                    transform: "translateX(1000px)",
+                    transition: "all 0.8s ease",
                     filter: "blur(50px)"
+
+                });
+
+                // third year section
+                setYearAnimation3({
+
+                    transform: "translateY(-1500px)",
+                    transition: "all 0.8s ease 0.3s",
+                    filter: "blur(50px)",
+                    zIndex: "2"
+
+                });
+
+                setThirdContentStyle({
+
+                    transform: "translateX(-500px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(50px)"
+
+                });
+
+                // fourth year section
+                setYearAnimation4({
+
+                    transform: "translateY(-2000px)",
+                    transition: "all 0.8s ease 0.4s",
+                    zIndex: "2",
+                    filter: "blur(50px)",
+
+                });
+
+                setFourthContentStyle({
+
+                    transform: "translateX(1000px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(50px)",
 
                 });
 
@@ -170,7 +321,8 @@ function Education() {
 
                 <div className={EducationStyle.subEducationContainer1} onScroll={subEducationScrollAnimation}>
 
-                    <div className={EducationStyle.educationContent} style={yearAnimation}>
+                    {/** First year box */}
+                    <div className={EducationStyle.educationContent} style={yearAnimation1}>
 
                         <div className={EducationStyle.educationContentBox} style={firstContentStyle}>
 
@@ -182,9 +334,10 @@ function Education() {
 
                     </div>
 
-                    <div className={EducationStyle.educationContent2}>
+                    {/** Second year box */}
+                    <div className={EducationStyle.educationContent2} style={yearAnimation2}>
 
-                        <div className={EducationStyle.educationContentBox2}>
+                        <div className={EducationStyle.educationContentBox2} style={secondContentStyle}>
 
                             <h3> Camellia Institute Of Polytechnic </h3>
                             <p> Diploma on Computer Science and Technology </p>
@@ -194,9 +347,10 @@ function Education() {
 
                     </div>
 
-                    <div className={EducationStyle.educationContent3}>
+                    {/** Third year box */}
+                    <div className={EducationStyle.educationContent3} style={yearAnimation3}>
 
-                        <div className={EducationStyle.educationContentBox3}>
+                        <div className={EducationStyle.educationContentBox3} style={thirdContentStyle}>
 
                             <h3> Memari V.M. Institution Unit-1 </h3>
                             <p> Higher Secondary - <br/> Education </p>
@@ -206,9 +360,10 @@ function Education() {
 
                     </div>
 
-                    <div className={EducationStyle.educationContent4}>
+                    {/** Fourth year box */}
+                    <div className={EducationStyle.educationContent4} style={yearAnimation4}>
 
-                        <div className={EducationStyle.educationContentBox4}>
+                        <div className={EducationStyle.educationContentBox4} style={fourthContentStyle}>
 
                             <h3> Memari V.M. Institution Unit-1 </h3>
                             <p> Secondary Education  </p>
