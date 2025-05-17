@@ -13,7 +13,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    background-image: linear-gradient(270deg, #efcb55 50%, #292929 50%);
+    /* background-image: linear-gradient(270deg, #efcb55 50%, #292929 50%); */
     overflow: hidden;
 
 }
@@ -25,6 +25,7 @@
     position: relative;
     overflow-wrap: anywhere;
     overflow: hidden;
+    background-color: #292929;
 
 }
 
@@ -182,6 +183,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background-color: #efcb55;
 
 }
 

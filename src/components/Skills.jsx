@@ -312,21 +312,21 @@ function Skills() {
                                 <ul>
 
                                     <li><SiGithubcopilot /></li>
-                                    <li><img src={logoimage} alt /></li>
+                                    <li><img src={logoimage} /></li>
                                     
                                 </ul>
                                 
                                 <ul>
 
                                     <li><SiGithubcopilot /></li>
-                                    <li><img src={logoimage} alt /></li>
+                                    <li><img src={logoimage} /></li>
                                     
                                 </ul>
 
                                 <ul>
 
                                     <li><SiGithubcopilot /></li>
-                                    <li><img src={logoimage} alt /></li>
+                                    <li><img src={logoimage} /></li>
                                     
                                 </ul>
 
