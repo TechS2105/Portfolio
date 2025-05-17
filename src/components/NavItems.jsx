@@ -159,10 +159,10 @@ function Navitem({ logo }) {
                                 <li style={list1}><AnchorLink offset={100} href='#home'> HOME </AnchorLink></li>
                                 <li style={list2}><AnchorLink offset={90} href='#about'> ABOUT  </AnchorLink></li>
                                 <li style={list3}><AnchorLink offset={90} href='#education'> EDUCATION  </AnchorLink></li>
-                                <li style={list4}><AnchorLink offset={100} href='#skills'> SKILLS  </AnchorLink></li>
-                                <li style={list5}><AnchorLink offset={100} href='#experience'> EXPERIENCE  </AnchorLink></li>
-                                <li style={list6}><AnchorLink offset={100} href='#projects'> PROJECTS  </AnchorLink></li>
-                                <li style={list7}><AnchorLink offset={100} href='#contact'> CONTACT  </AnchorLink></li>
+                                <li style={list4}><AnchorLink offset={90} href='#skills'> SKILLS  </AnchorLink></li>
+                                <li style={list5}><AnchorLink offset={90} href='#experience'> EXPERIENCE  </AnchorLink></li>
+                                <li style={list6}><AnchorLink offset={90} href='#projects'> PROJECTS  </AnchorLink></li>
+                                <li style={list7}><AnchorLink offset={90} href='#contact'> CONTACT  </AnchorLink></li>
 
                             </ul>
 

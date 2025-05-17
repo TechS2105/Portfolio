@@ -1,0 +1,601 @@
+@font-face {
+    font-family: 'skillsfont';
+    src: url('../fonts/gridstar-font/GridstarRegular-ovOax.otf');
+}
+
+@font-face {
+    font-family: 'skilltextfont';
+    src: url('../fonts/lato/Lato-Medium.ttf');
+}
+
+.skillContainer{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.skillContainer > .skillSubContainer1{
+
+    width: 50%;
+    height: 100%;
+    background-color: #efcb55;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.skillSubContainer1 > .skillsHeading{
+
+    font-size: 100px;
+    text-align: right;
+    padding-right: 30px;
+    font-family: 'skillsfont';
+    letter-spacing: 5px;
+
+}
+
+.skillsHeading > .headingDevideContent{
+
+    margin-bottom: 20px;
+    text-shadow: 10px 10px 2px #e8b327;
+    font-style: italic;
+    letter-spacing: 10px;
+
+}
+
+.headingDevideContent > span{
+
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.skillsHeading > .headingDevideContent:nth-child(2){
+
+    color: #fcfaea;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-shadow: 15px 20px 2px #292929a8;
+
+}
+
+.skillsHeading > .headingDevideContent svg{
+
+    font-size: 100px;
+    box-shadow: 5px 5px 2px #292929;
+    border-radius: 50px;
+    border: 2px solid #fcfaea;
+
+}
+
+
+.skillContainer > .skillSubContainer2{
+
+    width: 50%;
+    height: 100%;
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+
+}
+
+.skillSubContainer2 > .skillSection{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 50px;
+
+}
+
+.frontend > h3{
+
+    color: #efcb55;
+    font-family: 'skillsfont';
+    letter-spacing: 2px;
+    display: inline-flex;
+    align-items: center;
+    width: 300px;
+    gap: 10px;
+    font-size: 18px;
+
+}
+
+.frontend > h3 svg{
+
+    font-size: 25px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+
+.frontend > .unorderlist ul{
+
+    display: flex;
+    padding-left: 50px;
+    list-style-type: none;
+    gap: 20px;
+    margin: 20px 0px;
+    font-family: 'skilltextfont';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+.frontend .unorderlist ul > li{
+
+    color: #fcfaea;
+    font-size: 12px;
+
+} 
+
+.frontend > .codeLogo{
+
+    margin-left: 50px;
+    overflow: hidden;;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 550px;
+
+}
+
+.frontend > .codeLogo ul{
+
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    animation: logocarousel 8s linear infinite;
+
+}
+
+@keyframes logocarousel {
+    
+    from{
+
+        transform: translateX(0%);
+
+    }
+    to{
+
+        transform: translateX(-100%);
+
+    }
+
+}
+
+.frontend .codeLogo ul > li{
+
+    font-size: 50px;
+    height: 100%;
+    color: #fcfaea;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 70px;
+
+}
+
+.frontend .codeLogo ul li > svg{
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+
+}
+
+
+.backend > h3{
+
+    color: #efcb55;
+    font-family: 'skillsfont';
+    letter-spacing: 2px;
+    font-size: 18px;
+
+}
+
+.backend > .unorderlist ul{
+
+    display: flex;
+    padding-left: 50px;
+    margin: 20px 0px;
+    list-style-type: none;
+    gap: 20px;
+    font-family: 'skilltextfont';
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+.backend > .codeLogo {
+
+     margin-left: 50px;
+     overflow: hidden;;
+     display: inline-flex;
+     justify-content: space-between;
+     width: 300px;
+
+}
+
+.backend > .codeLogo ul {
+
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    animation: backendlogocarousel 3s linear infinite;
+
+}
+
+@keyframes backendlogocarousel {
+
+    from {
+
+        transform: translateX(0%);
+
+    }
+
+    to {
+
+        transform: translateX(-100%);
+
+    }
+
+}
+
+.backend .codeLogo ul > li {
+
+    font-size: 50px;
+    height: 100%;
+    color: #fcfaea;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 70px;
+
+}
+
+.backend .codeLogo ul li > svg {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+
+}
+
+.backend .unorderlist ul > li{
+
+    color: #fcfaea;
+    font-size: 12px;
+
+}
+
+.database > h3{
+
+    color: #efcb55;
+    font-family: 'skillsfont';
+    letter-spacing: 2px;
+    font-size: 18px;
+
+}
+
+.database > .unorderlist ul{
+
+    display: flex;
+    padding-left: 50px;
+    margin: 20px 0px;
+    list-style-type: none;
+    gap: 20px;
+    font-family: 'skilltextfont';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+.database .unorderlist ul > li{
+
+    color: #fcfaea;
+    font-size: 12px;
+
+}
+
+.database > .codeLogo{
+
+    margin-left: 50px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.database .codeLogo > ul{
+
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    animation: logoAnimation 3s linear infinite;
+
+}
+
+@keyframes logoAnimation {
+    
+    from{
+
+        transform: translateX(-100%);
+
+    }to{
+
+        transform: translateX(0%);
+
+    }
+
+}
+
+.database .codeLogo ul > li{
+
+    margin-right: 70px;
+
+}
+
+.database .codeLogo ul li > svg{
+
+    font-size: 25px;
+    color: #fcfaea;
+
+}
+
+.versionControl > h3{
+
+    color: #efcb55;
+    font-family: 'skillsfont';
+    letter-spacing: 2px;
+    font-size: 18px;
+
+}
+
+.versionControl > .unorderlist ul{
+
+    display: flex;
+    list-style-type: none;
+    margin: 20px 0px;
+    gap: 20px;
+    padding-left: 50px;
+    font-family: 'skilltextfont';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+.versionControl .unorderlist ul > li{
+
+    color: #fcfaea;
+    font-size: 12px;
+
+}
+
+.versionControl > .codeLogo{
+
+    width: 300px;
+    display: inline-flex;
+    margin-left: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.versionControl .codeLogo > ul{
+
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    animation: versionControlLogoAnimation 3s linear infinite;
+
+}
+
+@keyframes versionControlLogoAnimation {
+    
+    from{
+
+        transform: translateX(0%);
+
+    }to{
+
+        transform: translateX(-100%);
+
+    }
+
+}
+
+.versionControl .codeLogo ul > li{
+
+    margin-right: 70px;
+
+}
+
+.versionControl .codeLogo ul li > svg{
+
+    font-size: 25px;
+    color: #fcfaea;
+
+}
+
+
+.tools > h3{
+
+    color: #efcb55;
+    font-family: 'skillsfont';
+    letter-spacing: 2px;
+
+}
+
+.tools > .unorderlist ul{
+
+    display: flex;
+    padding-left: 50px;
+    gap: 20px;
+    list-style-type: none;
+    margin: 20px 0px;
+    font-family: 'skilltextfont';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+
+.tools .unorderlist ul > li{
+
+    color: #fcfaea;
+    font-size: 12px;
+
+}
+
+.tools > .codeLogo{
+
+    margin-left: 50px;
+    display: inline-flex;
+    width: 400px;;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.tools .codeLogo > ul{
+
+    display: flex;
+    list-style-type: none;
+    animation: toolsAnimation 8s linear infinite;
+
+}
+
+@keyframes toolsAnimation {
+    
+    to{
+
+        transform: translateX(-100%);
+
+    }
+
+}
+
+.tools .codeLogo ul > li{
+
+    margin-right: 70px;
+
+}
+
+.tools .codeLogo ul li > svg{
+
+    font-size: 20px;
+    color: #fcfaea;
+
+}
+
+.aiTools > h3{
+
+    font-family: 'skillsfont';
+    color: #efcb55;
+    letter-spacing: 2px;
+    font-size: 18px;
+
+}
+
+.aiTools > .unorderlist ul{
+
+    display: flex;
+    margin: 20px 0px;
+    padding-left: 50px;
+    list-style-type: none;
+    font-family: 'skilltextfont';
+    gap: 20px;
+    text-transform: uppercase;
+
+}
+
+.aiTools .unorderlist ul > li{
+
+    color: #fcfaea;
+    font-size: 12px;
+
+}
+
+.aiTools > .codeLogo{
+
+    display: inline-flex;
+    margin-left: 50px;
+    overflow: hidden;
+    width: 300px;
+    white-space: nowrap;
+
+}
+
+.aiTools .codeLogo > ul{
+
+    list-style-type: none;
+    display: flex;
+    animation: aitoolslogo 3s linear infinite;
+
+}
+
+@keyframes aitoolslogo {
+
+    from{
+
+        transform: translateX(-100%);
+
+    }
+
+    to{
+
+        transform: translateX(0%);
+
+    }
+    
+}
+
+.aiTools .codeLogo ul > li{
+
+    margin-right: 70px;
+
+}
+
+.aiTools .codeLogo ul li > svg{
+
+    font-size: 25px;
+    color: #fcfaea;
+
+}
+
+.aiTools .codeLogo ul li > img{
+
+    width: 25px;
+    height: 25px;
+    background-color: #fcfaea;
+    border-radius: 50%;
+
+}
