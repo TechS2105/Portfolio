@@ -47,7 +47,15 @@ function Navitem({ logo }) {
         filter: "blur(20px)",
 
     });
+
     const [list7, setList7] = useState({
+
+        transform: "scale(0)",
+        filter: "blur(20px)"
+
+    });
+
+    const [list8, setList8] = useState({
 
         transform: "scale(0)",
         filter: "blur(20px)",
@@ -119,6 +127,14 @@ function Navitem({ logo }) {
 
                     transform: "scale(1)",
                     transition: "all 0.5s ease 1.4s",
+                    filter: "blur(0px)",
+
+                })
+
+                setList8({
+
+                    transform: "scale(1)",
+                    transition: "all 0.5s ease 1.6s",
                     filter: "blur(0px)"
 
                 });
@@ -160,9 +176,10 @@ function Navitem({ logo }) {
                                 <li style={list2}><AnchorLink offset={90} href='#about'> ABOUT  </AnchorLink></li>
                                 <li style={list3}><AnchorLink offset={90} href='#experience'> EXPERIENCE  </AnchorLink></li>
                                 <li style={list4}><AnchorLink offset={90} href='#education'> EDUCATION  </AnchorLink></li>
-                                <li style={list5}><AnchorLink offset={90} href='#skills'> SKILLS  </AnchorLink></li>
-                                <li style={list6}><AnchorLink offset={90} href='#projects'> PROJECTS  </AnchorLink></li>
-                                <li style={list7}><AnchorLink offset={90} href='#contact'> CONTACT  </AnchorLink></li>
+                                <li style={list5}><AnchorLink offset={90} href='#projects'> PROJECTS  </AnchorLink></li>
+                                <li style={list6}><AnchorLink offset={90} href='#skills'> SKILLS  </AnchorLink></li>
+                                <li style={list7}><AnchorLink offset={90}  href='#services'> SERVICES</AnchorLink></li>
+                                <li style={list8}><AnchorLink offset={90} href='#contact'> CONTACT  </AnchorLink></li>
 
                             </ul>
 
