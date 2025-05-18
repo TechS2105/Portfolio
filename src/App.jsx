@@ -18,8 +18,8 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Education />
       <Experience />
+      <Education />
       <Skills />
           
     </>

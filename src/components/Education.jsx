@@ -27,7 +27,7 @@ function Education() {
         
         if (window.innerWidth > 600) {
             
-            if (window.scrollY > 1300) {
+            if (window.scrollY > 2000) {
                 
                 setSpanEducationHeading1({
 
@@ -149,7 +149,7 @@ function Education() {
         
         if (window.innerWidth > 600) {
             
-            if (window.scrollY > 1300) {
+            if (window.scrollY > 2000) {
                 
                 // first year section 
                 setYearAnimation1({

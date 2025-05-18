@@ -597,5 +597,6 @@
     height: 25px;
     background-color: #fcfaea;
     border-radius: 50%;
+    object-fit: cover;
 
 }
