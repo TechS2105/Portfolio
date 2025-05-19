@@ -14,7 +14,8 @@ function Experience() {
 
                 <div className={ExperienceStyle.experienceHeading}>
 
-                    <h2> Work <span style={{color: "#efcb55", textShadow: "2px 2px 2px #292929"}}> Experience </span> </h2>
+                    <h2>
+                    Experience <span className={ExperienceStyle.experienceHeadingSpan}> & Role </span> </h2>
 
                 </div>
                 <div className={ExperienceStyle.experienceContent}>

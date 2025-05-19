@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'projectfont';
+    src: url('../fonts/gridstar-font/GridstarRegular-ovOax.otf');
+}
+
+:root{
+
+    --main-color: #292929;
+    --primary-color: #efcb55;
+    --secondary-color: #f5e293;
+    --light-color: #fcfaea;
+
+}
+
+.projectContainer{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.projectContainer > .projectContainerSection{
+
+    width: 100%;
+    height: 20%;
+    background-color: #fcfaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.projectContainerSection > .projectHeading{
+
+    font-size: 50px;
+    text-align: center;
+    font-family: 'projectfont';
+    color: #292929;
+    letter-spacing: 10px;
+
+}
+
+.projectHeading > .projectHeadingSpan{
+
+    background-color: var(--primary-color);
+    padding: 10px  20px;
+    color: var(--light-color);
+    text-shadow: 2px 2px 2px var(--main-color);
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+}

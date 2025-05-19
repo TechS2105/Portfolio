@@ -28,7 +28,7 @@ const Services = [
     servicename: "Wordpress Development",
     serviceicon: "../../public/images/wordpress.png",
     description:
-      "Elevate your online presence with our WordPress Development service, delivering bespoke, responsive websites crafted to perfection. From custom theme design and plugin integration to performance optimization and robust security, we ensure a scalable, SEO-friendly platform tailored to your brand’s unique needs. Our intuitive content management solutions make updates effortless, empowering you to grow with confidence and stand out in the digital realm.",
+      "Elevate your online presence with our WordPress Development service, delivering bespoke, responsive websites crafted to perfection. From custom theme design and plugin integration to performance optimization and robust security, we ensure a scalable, SEO-friendly platform tailored to your brand’s unique needs. I intuitive content management solutions make updates effortless, empowering you to grow with confidence and stand out in the digital realm.",
   },
 ];
 

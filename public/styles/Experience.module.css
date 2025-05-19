@@ -41,6 +41,17 @@
 
 }
 
+.experienceHeading h2 > .experienceHeadingSpan{
+
+    color: #fcfaea; 
+    text-shadow: 2px 2px 2px #292929;
+    background-color: #efcb55;
+    padding: 10px 20px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+}
+
 .experienceContainer > .experienceContent{
 
     height: 80%;
@@ -61,7 +72,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #292929;
+    /* background-color: #292929; */
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 
@@ -79,7 +90,7 @@
     font-size: 25px;
     font-family: 'experiencefont';
     letter-spacing: 5px;
-    color: #fcfaea;
+    color: #292929;
     position: relative;
 
 }
@@ -106,7 +117,7 @@
 
 .experienceContentHeading .experienceContentText:nth-child(2) > h4{
 
-    color: #fcfaea;
+    color: #292929;
     margin-bottom: 5px;
     font-family: "experiencetextfont";
     letter-spacing: 3px;

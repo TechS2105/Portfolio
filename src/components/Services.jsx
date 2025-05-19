@@ -9,7 +9,7 @@ function Services() {
       <Container>
         <div id="services" className={ServiceStyle.serviceContainer}>
           <div className={ServiceStyle.serviceContainerHeading}>
-            <h2>Services <span className={ServiceStyle.serviceSpanHeading}>I Provide</span>
+            <h2>Services <span className={ServiceStyle.serviceSpanHeading}> Overview </span>
             </h2>
           </div>
 

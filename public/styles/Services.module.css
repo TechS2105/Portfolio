@@ -37,8 +37,12 @@
 
 .serviceContainerHeading h2 > .serviceSpanHeading{
 
-    color: #efcb55;
+    color: #ffffff;
     text-shadow: 2px 2px 2px #292929;
+    background-color: #efcb55;
+    padding: 5px 20px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
 
 }
 
