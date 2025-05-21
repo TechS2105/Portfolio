@@ -1,0 +1,17 @@
+.imageDiv{
+
+    width: 350px;
+    height: 95%;
+    overflow: hidden;
+    margin-right: 20px;
+
+}
+
+.projectImages{
+
+    width: 100%;
+    height: calc(95% * 100%);
+    object-fit: cover;
+    object-position: top;
+
+}

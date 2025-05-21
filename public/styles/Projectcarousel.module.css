@@ -1,0 +1,49 @@
+.carouselContainer{
+
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+
+}
+
+.carouselContainer > .subCarouselContainer{
+
+    display: flex;
+    animation: projectcarouesl 15s linear infinite;
+
+}
+
+.carouselContainer::before{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background-color: #fcfaea;
+
+}
+
+.carouselContainer:hover .subCarouselContainer{
+
+    animation-play-state: paused
+
+}
+
+@keyframes projectcarouesl {
+    
+    from{
+
+        transform: translateX(0%);
+
+    }to{
+
+        transform: translateX(-100%);
+
+    }
+
+}

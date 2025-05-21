@@ -1,106 +1,107 @@
-import React, {useState} from 'react';
+// import React, {useState} from 'react';
 import Container from '../components/Container';
 import ProjectsStyle from '../../public/styles/Projects.module.css';
+import ProjectCarousel from '../components/Projectcarousel';
 
-let image = '../../public/images/vionesse image/vionessefinalimage.png';
-let image2 = '../../public/images/Guitarist image.png';
-let image3 = "../../public/images/digitalera-new.jpeg";
-let image4 = "../../public/images/photographer.jpeg";
+// let image = '../../public/images/vionesse image/vionessefinalimage.png';
+// let image2 = '../../public/images/Guitarist image.png';
+// let image3 = "../../public/images/digitalera-new.jpeg";
+// let image4 = "../../public/images/photographer.jpeg";
 
 function Projects() {
 
-    const [imageScrolling, setImageScrolling] = useState();
-    const [secondImageScrolling, setSecondImageScrolling] = useState();
-    const [thirdImageScrolling, setThirdImageScrolling] = useState();
-    const [fourthImageScrolling, setFourthImageScrolling] = useState();
+    // const [imageScrolling, setImageScrolling] = useState();
+    // const [secondImageScrolling, setSecondImageScrolling] = useState();
+    // const [thirdImageScrolling, setThirdImageScrolling] = useState();
+    // const [fourthImageScrolling, setFourthImageScrolling] = useState();
 
-    function mouseOverScrolling() {
+    // function mouseOverScrolling() {
 
-        setImageScrolling({
+    //     setImageScrolling({
 
-            transform: "translateY(-910px)",
-            transition: "all 5s ease",
+    //         transform: "translateY(-910px)",
+    //         transition: "all 5s ease",
 
-        });
+    //     });
 
-    }
+    // }
 
-    function mouseOutScrolling() {
+    // function mouseOutScrolling() {
         
-        setImageScrolling({
+    //     setImageScrolling({
 
-            transform: "translateY(0px)",
-            transition: "all 5s ease",
+    //         transform: "translateY(0px)",
+    //         transition: "all 5s ease",
 
-        });
+    //     });
 
-    }
+    // }
 
-    function secondMouseOverScrolling() {
+    // function secondMouseOverScrolling() {
         
-        setSecondImageScrolling({
+    //     setSecondImageScrolling({
 
-            transform: "translateY(-910px)",
-            transition: "all 5s ease",
+    //         transform: "translateY(-910px)",
+    //         transition: "all 5s ease",
 
-        });
+    //     });
 
-    }
+    // }
 
-    function secondMouseOutScrolling() {
+    // function secondMouseOutScrolling() {
         
-        setSecondImageScrolling({
+    //     setSecondImageScrolling({
 
-            transform: "translateY(0px)",
-            transition: "all 5s ease"
+    //         transform: "translateY(0px)",
+    //         transition: "all 5s ease"
 
-        });
+    //     });
 
-    }
+    // }
 
-    function thirdMouseOverScrolling() {
+    // function thirdMouseOverScrolling() {
         
-        setThirdImageScrolling({
+    //     setThirdImageScrolling({
 
-            transform: "translateY(-910px)",
-            transition: "all 5s ease"
+    //         transform: "translateY(-910px)",
+    //         transition: "all 5s ease"
 
-        });
+    //     });
 
-    }
+    // }
 
-    function thirdMouseOutScrolling() {
+    // function thirdMouseOutScrolling() {
         
-        setThirdImageScrolling({
+    //     setThirdImageScrolling({
 
-            transform: "translateY(0px)",
-            transition: "all 5s ease",
+    //         transform: "translateY(0px)",
+    //         transition: "all 5s ease",
 
-        })
+    //     })
 
-    }
+    // }
 
-    function fourthMouseOverScrolling() {
+    // function fourthMouseOverScrolling() {
         
-        setFourthImageScrolling({
+    //     setFourthImageScrolling({
 
-            transform: "translateY(-550px)",
-            transition: "all 3s ease"
+    //         transform: "translateY(-500px)",
+    //         transition: "all 3s ease"
 
-        });
+    //     });
 
-    }
+    // }
 
-    function fourthMouseOutScrolling() {
+    // function fourthMouseOutScrolling() {
         
-        setFourthImageScrolling({
+    //     setFourthImageScrolling({
 
-            transform: "translateY(0px)",
-            transition: "all 5s ease"
+    //         transform: "translateY(0px)",
+    //         transition: "all 5s ease"
 
-        })
+    //     })
 
-    }
+    // }
     
     return (
 
@@ -120,7 +121,7 @@ function Projects() {
 
                 <div className={ProjectsStyle.projectShowCaseContainer}>
 
-                    <div className={ProjectsStyle.subProjectShowCaseContainer}>
+                    {/* <div className={ProjectsStyle.subProjectShowCaseContainer}>
 
                         <div className={ProjectsStyle.projectIframeCustomStyle} onMouseOver={mouseOverScrolling} onMouseOut={mouseOutScrolling}>
 
@@ -146,7 +147,9 @@ function Projects() {
 
                         </div>
 
-                    </div>
+                    </div> */}
+
+                    <ProjectCarousel />
 
                 </div>
 
