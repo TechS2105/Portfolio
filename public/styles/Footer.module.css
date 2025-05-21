@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'footerfont';
+    src: url('../fonts/rockia-font/RockiaRegular-gw561.otf');
+}
+
+@font-face {
+    font-family: 'footercopyrightfont';
+    src: url('../fonts/lato/Lato-Medium.ttf');
+}
+
+:root{
+
+    --main-color: #292929;
+    --primary-color: #efcb55;
+    --secondary-color: #f5e293;
+    --third-color: #fcfaea;
+
+}
+
+.footerContainer{
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    background-color: var(--third-color);
+
+}
+
+.footerContainer > .footerContent{
+
+    width: 35%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerContainer .footerContent > p{
+
+    font-size: 30px;
+    font-family: 'footerfont';
+    letter-spacing: 5px;
+    color: var(--primary-color);
+    background-color: var(--main-color);
+    width: 300px;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+}
+
+.footerContainer > .footerCopyright{
+
+    width: 35%;
+
+}
+
+.footerContainer > .footerCopyright p{
+
+   font-size: 15px;
+   padding-left: 20px;
+   font-family: 'footercopyrightfont';
+
+}

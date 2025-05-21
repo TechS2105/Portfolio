@@ -1,0 +1,179 @@
+@font-face {
+    font-family: contactfont;
+    src: url('../fonts/gridstar-font/GridstarRegular-ovOax.otf');
+}
+
+@font-face {
+    font-family: contactinfofont;
+    src: url('../fonts/lato/Lato-Medium.ttf');
+}
+
+:root{
+
+    --main-color: #292929;
+    --primary-color: #efcb55;
+    --secondary-color: #f5e293;
+    --third-color: #fcfaea;
+
+}
+
+.contactContainer{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.contactContainer > .contactHeading{
+
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contactHeading > h2{
+
+    font-family: 'contactfont';
+    font-size: 50px;
+    letter-spacing: 10px;
+
+}
+
+.contactHeading h2 > .spanContactHeading{
+
+    background-color: var(--primary-color);
+    padding: 0px 20px;
+    color: var(--third-color);
+    text-shadow: 2px 2px 2px var(--main-color);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+
+.contactContainer > .contactInformationContainer{
+
+    width: 80%;
+    height: 80%;
+    display: flex;
+    /* background-color: #efcb55; */
+    overflow: hidden;
+
+}
+
+.contactInformationContainer > .contactDetails{
+
+    width: 10%;
+    height: 100%;
+    background-color: #292929;
+    color: var(--third-color);
+    overflow: hidden;
+
+}
+
+.contactInformationContainer > .contactMap{
+
+    width: 50%;
+    height: 100%;
+
+}
+
+.contactInformationContainer > .contactForm{
+
+    width: 40%;
+    height: 100%;
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+.contactForm > form label{
+
+    color: var(--primary-color);
+    font-family: 'contactinfofont';
+    letter-spacing: 5px;
+    font-size: 15px;
+
+}
+
+.contactForm > form input{
+
+    width: 400px;
+    height: 30px;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--third-color);
+    padding-left: 5px;
+
+}
+
+.contactForm > form textarea{
+
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.contactForm > form button{
+
+    width: 200px;
+    height: 30px;
+    background-color: #efcb55;
+    outline: none;
+    border: none;
+    font-family: 'contactinfofont';
+    color: var(--main-color);
+    letter-spacing: 2px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+::placeholder{
+
+    font-family: 'contactinfofont';
+
+}
+
+.contactDetails > .contactsInfo:nth-child(1){
+
+    writing-mode: sideways-lr;
+    margin-bottom: 20%;
+    margin-top: 20%;
+    margin-left: 50px;
+    font-family: 'contactinfofont';
+    font-size: 17px;
+
+}
+
+.contactDetails > .contactsInfo:nth-child(2){
+
+    writing-mode: sideways-lr;
+    margin-bottom: 20%;
+    margin-left: 50px;
+    font-family: 'contactinfofont';
+    font-size: 17px;
+
+}
+
+.contactDetails > .contactsInfo:nth-child(3){
+
+    writing-mode: sideways-lr;
+    margin-bottom: 20%;
+    margin-left: 50px;
+    font-family: 'contactinfofont';
+    font-size: 17px;
+
+}
