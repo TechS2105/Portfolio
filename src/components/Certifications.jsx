@@ -21,7 +21,7 @@ function Certifications(){
 
                     <div className={CertificationStyle.certificationName}>
 
-                        <h2>
+                        <h2 className={CertificationStyle.certificationHeading}>
 
                             <div className={CertificationStyle.certificationHeading1}>
 

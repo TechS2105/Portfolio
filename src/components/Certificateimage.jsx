@@ -1,12 +1,13 @@
 import React from 'react';
+import CertificateImage from '../../public/styles/Certificationimages.module.css'
 
 function Certificateimage(props) {
     
     return (
 
-        <div>
+        <div className={CertificateImage.certificateImageStyle}>
 
-            <img src={props.image} alt={props.image} />
+            <a href={props.imagelink} download> <img src={props.image} alt={props.image} /> </a>
 
         </div>
 

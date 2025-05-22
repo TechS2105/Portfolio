@@ -42,9 +42,9 @@
 
 .footerContainer .footerContent > p{
 
-    font-size: 150px;
+    font-size: 70px;
     font-family: 'footerfont';
-    letter-spacing: 150px;
+    letter-spacing: 50px;
     color: var(--primary-color);
     width: 620px;
     background-color:var();

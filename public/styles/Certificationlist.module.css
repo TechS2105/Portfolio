@@ -1,0 +1,33 @@
+.certificationListContainer{
+
+    height: 100%;
+    white-space: nowrap;
+
+}
+
+.certificationListContainer > .subCertificateList{
+
+    width: 600px;
+    animation: certificateAnimation 5s linear infinite;
+
+}
+
+.certificationListContainer:hover .subCertificateList{
+
+    animation-play-state: paused;
+
+}
+
+@keyframes certificateAnimation {
+
+    from{
+
+        transform: translateY(0%);
+
+    }to{
+
+        transform: translateY(-100%);
+
+    }
+    
+}

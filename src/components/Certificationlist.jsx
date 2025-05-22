@@ -1,5 +1,6 @@
 import React from 'react';
 import CertificateImages from './Certificateimage';
+import CertificationListStyle from '../../public/styles/Certificationlist.module.css'
 
 function Certificationlist() {
     
@@ -7,17 +8,46 @@ function Certificationlist() {
 
         <>
 
-            <CertificateImages
-        
-                image="../../public/images/udemy 1.png"
-            
-            />
+            <div className={CertificationListStyle.certificationListContainer}>
 
-            <CertificateImages 
+                <div className={CertificationListStyle.subCertificateList}>
+
+                    <CertificateImages
         
-                image="../../public/images/udemy 2.png"
+                        image="../../public/images/udemy 1.png"
+                        imagelink="../../public/images/udemy 1.png"
             
-            />
+                    />
+
+                    <CertificateImages 
+        
+                        image="../../public/images/udemy 2.png"
+                        imagelink="../../public/images/udemy 2.png"
+            
+                    />
+                    
+                </div>
+
+                <div className={CertificationListStyle.subCertificateList}>
+
+                    <CertificateImages
+
+                        image="../../public/images/udemy 1.png"
+                        imagelink="../../public/images/udemy 1.png"
+
+                    />
+
+                    <CertificateImages 
+
+                        image="../../public/images/udemy 2.png"
+                        imagelink="../../public/images/udemy 2.png"
+
+                    />
+
+                </div>
+                    
+                
+            </div>
             
         </>
 

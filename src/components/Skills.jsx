@@ -84,7 +84,7 @@ function Skills() {
 
                             <div className={SkillStyle.codeLogo}>
 
-                                    <ul>
+                                <ul>
 
                                         <li><IoLogoHtml5 /></li>
                                         <li><IoLogoCss3 /></li>
