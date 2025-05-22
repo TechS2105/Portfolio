@@ -67,10 +67,10 @@
 
 .aboutcontent > p{
 
-    font-size: 15px;
+    font-size: 14px;
     color: #fcfaea;
     line-height: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-family: 'aboutparafont';
     text-transform: normal;
 
@@ -88,10 +88,24 @@
     position: relative;
     border: none;
     outline: none;
+    margin-right: 50px;
 
 }
 
+.aboutcontent > a{
 
+    color: #fcfaea;
+    font-family: 'aboutheadingfont';
+    color: #efcb55;
+    text-decoration: none;
+    letter-spacing: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    width: 250px;
+
+}
 
 .aboutcontent > button::before{
 

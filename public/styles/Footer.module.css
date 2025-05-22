@@ -20,47 +20,80 @@
 .footerContainer{
 
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 10px;
-    background-color: var(--third-color);
+    background-color: var(--main-color);
+    overflow: hidden;
+    border-top: 20px solid var(--third-color);
 
 }
 
 .footerContainer > .footerContent{
 
-    width: 35%;
+    width: 40%;
     display: flex;
     justify-content: center;
+    align-items: center;
 
 }
 
 .footerContainer .footerContent > p{
 
-    font-size: 30px;
+    font-size: 150px;
     font-family: 'footerfont';
-    letter-spacing: 5px;
+    letter-spacing: 150px;
     color: var(--primary-color);
-    background-color: var(--main-color);
-    width: 300px;
+    width: 620px;
+    background-color:var();
     text-align: center;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
+    padding: 0px 30px;
 
 }
 
 .footerContainer > .footerCopyright{
 
-    width: 35%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 
 }
 
 .footerContainer > .footerCopyright p{
 
-   font-size: 15px;
-   padding-left: 20px;
+   font-size: 20px;
    font-family: 'footercopyrightfont';
+   color: var(--third-color);
+   letter-spacing: 5px;
+
+}
+
+.footerContainer > .footerLogo{
+
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100%;
+    gap: 70px;
+
+}
+
+.footerLogo > a{
+
+    font-size: 20px;
+    background-color: var(--third-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    /* border-radius: 50px; */
 
 }

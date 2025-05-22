@@ -81,7 +81,7 @@
 
 }
 
-nav > ul {
+nav > .unorderNavList {
 
     font-size: 15px;
     display: flex;
@@ -91,19 +91,22 @@ nav > ul {
     justify-content: flex-end;
     list-style-type: none;
     font-weight: 100;
-    gap: 50px;
+    gap: 10px;
     overflow: hidden;
-    padding: 0px 20px 0px 0px;
+    padding: 0px 0px 0px 0px;
 
 }
 
-ul > li{
+.unorderNavList > li{
 
     letter-spacing: 2px;
+    /* background-color: #efcb55; */
+    padding: 0px 10px;
+    overflow: hidden;
 
 }
 
-ul li > a{
+.unorderNavList li > a{
 
     text-decoration: none;
     color: #292929;
@@ -117,7 +120,7 @@ ul li > a{
 
 }
 
-ul li > a::before{
+.unorderNavList li > a::before{
 
     content: "";
     position: absolute;
@@ -131,13 +134,13 @@ ul li > a::before{
 
 }
 
-ul li > a:hover{
+.unorderNavList li > a:hover{
 
     color: #fcfaea;
 
 }
 
-ul li > a:hover::before{
+.unorderNavList li > a:hover::before{
 
     width: 100%;
     height: 100%;

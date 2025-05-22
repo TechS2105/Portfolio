@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Container from '../components/Container';
 import AboutStyle from '../../public/styles/About.module.css';
+import { LuDownload } from "react-icons/lu";
 
 let image = "../../public/images/image4.jpg";
 
@@ -38,6 +39,13 @@ function About() {
 
         transform: "translateX(-1000px)",
         filter: "blur(50px)"
+
+    });
+
+    const [cvdownloadbtn, setCvdownloadbtn] = useState({
+
+        transform: "scale(0)",
+        filter: "blur(20px)"
 
     });
 
@@ -85,6 +93,14 @@ function About() {
                 
             });
 
+            setCvdownloadbtn({
+
+                transform: "scale(1)",
+                filter: "blur(0)",
+                transition: "all 0.8s ease 2s",
+
+            });
+
         } else {
             
             setImageAnimation({
@@ -127,6 +143,14 @@ function About() {
 
             });
 
+            setCvdownloadbtn({
+
+                transform: "scale(0)",
+                transition: "all 0.8s ease",
+                filter: "blur(20px)",
+
+            })
+
         }
 
     }
@@ -153,12 +177,13 @@ function About() {
 
                         <h2 style={aboutHeading}> About <br /> <span className={AboutStyle.aboutSpanText}> Me  </span>  </h2> 
                         
-                        <p style={aboutpara1}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere fuga deleniti aliquam itaque perspiciatis, expedita aliquid totam officiis, numquam, obcaecati dolores aut! Non debitis consequatur quae voluptatem maiores, veritatis labore.</p>
+                        <p style={aboutpara1}>I’m a passionate Full-Stack Developer with experience in building responsive, high-performance web applications. I specialize in both front-end and back-end technologies, including HTML, CSS, JavaScript, React, Node.js, Express, and databases like MySQL and PostgreSQL. My approach combines clean, maintainable code with a focus on user experience and scalability.</p>
 
-                        <p style={aboutpara2}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit beatae numquam perferendis magnam dolor vel obcaecati exercitationem, dolorum nostrum rerum nesciunt quam sequi odio quos autem! Quidem dolores distinctio tenetur?
+                        <p style={aboutpara2}>I’m driven by the challenge of solving real-world problems through intuitive and efficient digital solutions. Whether working independently or as part of a team, I aim to create products that are both functional and visually engaging. This portfolio highlights my technical skills, creative thinking, and dedication to continuous learning. If you’re interested in collaborating or learning more about my work, feel free to reach out—I’m always open to exciting opportunities and new challenges.
                         </p>
 
                         <button style={aboutbtn}><a href="../../public/files/Sovan Sundar Dey Resume.pdf" target='_blank'> Know More About Me </a></button>
+                        <a href='../../public/files/Sovan Sundar Dey Resume.pdf' style={cvdownloadbtn} download>Download CV <LuDownload /></a>
                         
                     </div>
 

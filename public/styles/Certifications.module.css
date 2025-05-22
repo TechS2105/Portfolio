@@ -1,0 +1,88 @@
+@font-face {
+    font-family: certificationfont;
+    src: url('../fonts/gridstar-font/GridstarRegular-ovOax.otf');
+}
+
+@font-face {
+    font-family: certificatetextfont;
+    src: url('../fonts/lato/Lato-Medium.ttf');
+}
+
+:root{
+
+    --main-color: #292929;
+    --primary-color: #efcb55;
+    --secondary-color: #f5e293;
+    --third-color: #fcfaea;
+
+}
+
+.certificationContainerStyle{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.certificationContainerStyle > .certificationSubContainer1{
+
+    width: 50%;
+    height: 100%;
+    background-color: var(--main-color);
+    overflow: hidden;
+
+}
+
+.certificationContainerStyle > .certificationSubContainer2{
+
+    width: 50%;
+    height: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+
+}
+
+.certificationSubContainer2 > .certificationName{
+
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow: hidden;
+
+}
+
+.certificationName > h2{
+
+    line-height: 130px;
+
+}
+
+.certificationName h2 > .certificationHeading1 span{
+
+    font-family: 'certificationfont';
+    font-size: 100px;
+    letter-spacing: 10px;
+
+}
+
+.certificationName h2 > .certificationHeading2 span{
+
+    font-family: 'certificationfont';
+    font-size: 100px;
+    letter-spacing: 10px;
+    background-color: var(--main-color);
+    color: var(--third-color);
+    padding: 0px 10px;
+
+}
+
+.certificationName h2 > .certificationHeading3 span{
+
+    font-family: 'certificationfont';
+    font-size: 100px;
+    letter-spacing: 10px;
+
+}

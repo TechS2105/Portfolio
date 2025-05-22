@@ -1,5 +1,7 @@
 import React from 'react';
 import FooterStyle from '../../public/styles/Footer.module.css';
+import { FaLinkedinIn } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
 
 let date = new Date().getFullYear();
 
@@ -11,7 +13,7 @@ function Footer() {
 
             <div className={FooterStyle.footerCopyright}>
 
-                <p> Copyright @{date} All Rights Reserved </p>
+                <p> Copyright @{date} </p>
 
             </div>
 
@@ -21,9 +23,10 @@ function Footer() {
             
             </div>
 
-            <div className={FooterStyle.footerContent}>
+            <div className={FooterStyle.footerLogo}>
                 
-               
+                <a href="https://www.linkedin.com/in/sovan-sundar-dey-3b3a61238/" target="_blank"> <FaLinkedinIn /> </a>
+                <a href="https://github.com/TechS2105" target="_blank"> <FiGithub /> </a>
             
             </div>
 

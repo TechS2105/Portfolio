@@ -62,6 +62,13 @@ function Navitem({ logo }) {
 
     });
 
+    const [list9, setList9] = useState({
+
+        transform: "scale(0)",
+        filter: "blur(20px)",
+
+    })
+
     function handelLoadAnimation() {
        
         useEffect(() => {
@@ -135,9 +142,17 @@ function Navitem({ logo }) {
 
                     transform: "scale(1)",
                     transition: "all 0.5s ease 1.6s",
-                    filter: "blur(0px)"
+                    filter: "blur(0px)",
 
                 });
+
+                setList9({
+
+                    transform: "scale(1)",
+                    transition: "all 0.5s ease 1.7s",
+                    filter: "blur(0px)",
+
+                })
 
             }, 1800)
 
@@ -170,7 +185,7 @@ function Navitem({ logo }) {
 
                         <nav>
 
-                            <ul>
+                            <ul className={NavbarStyle.unorderNavList}>
 
                                 <li style={list1}><AnchorLink offset={100} href='#home'> HOME </AnchorLink></li>
                                 <li style={list2}><AnchorLink offset={90} href='#about'> ABOUT  </AnchorLink></li>
@@ -178,8 +193,9 @@ function Navitem({ logo }) {
                                 <li style={list4}><AnchorLink offset={90} href='#education'> EDUCATION  </AnchorLink></li>
                                 <li style={list5}><AnchorLink offset={90} href='#projects'> PORTFOLIO  </AnchorLink></li>
                                 <li style={list6}><AnchorLink offset={90} href='#skills'> SKILLS  </AnchorLink></li>
-                                <li style={list7}><AnchorLink offset={90}  href='#services'> SERVICES</AnchorLink></li>
-                                <li style={list8}><AnchorLink offset={90} href='#contact'> CONTACT  </AnchorLink></li>
+                                <li style={list7}><AnchorLink offset={90} href='#services'> SERVICES</AnchorLink></li>
+                                <li style={list8}><AnchorLink offset={90}  href='#certification'> CERTIFICATIONS </AnchorLink></li>
+                                <li style={list9}><AnchorLink offset={90} href='#contact'> CONTACT  </AnchorLink></li>
 
                             </ul>
 
