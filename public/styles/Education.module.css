@@ -26,6 +26,7 @@
     overflow-wrap: anywhere;
     overflow: hidden;
     background-color: #292929;
+    background-image: url("https://www.transparenttextures.com/patterns/gun-metal.png");
 
 }
 
@@ -184,6 +185,7 @@
     justify-content: center;
     overflow: hidden;
     background-color: #efcb55;
+    background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
 
 }
 

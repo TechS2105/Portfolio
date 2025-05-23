@@ -4,12 +4,14 @@ import LoaderStyle from '../../public/styles/Loader.module.css';
 function SiteLoader() {
 
     const [maincontainer, setMaincontainer] = useState();
+
     const [box1, setBox1] = useState({
 
         backgroundColor: "#efcb55"
 
     });
     const [box2, setBox2] = useState();
+
     const [box3, setBox3] = useState({
     
         backgroundColor: "#efcb55"

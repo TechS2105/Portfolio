@@ -12,7 +12,10 @@
     object-fit: contain;
     margin-top: 50px;
     border-radius: 10px;
+    padding: 20px;
     border-top: 10px solid #efcb55;
     border-bottom: 10px solid #efcb55;
+    border-right: 10px solid #fcfaea;
+    border-left: 10px solid #fcfaea;
 
 }

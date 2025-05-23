@@ -30,6 +30,7 @@
     width: 50%;
     height: 100%;
     background-color: var(--main-color);
+    background-image: url("https://www.transparenttextures.com/patterns/gun-metal.png");
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -41,6 +42,7 @@
     width: 50%;
     height: 100%;
     background-color: var(--primary-color);
+    background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
     display: flex;
     align-items: center;
 

@@ -15,16 +15,37 @@ function Experience() {
 
     const [companyNameAnimation, setCompanyNameAnimation] = useState({
 
-      transform: "translateY(500px)",
+      transform: "scale(0)",
       filter: "blur(20px)",
-      position: "absolute",
-      content: "",
-      top: "50px",
-      left: "0",
-      height: "3px",
-      width: "100%",
-      backgroundColor: "#efcb55",
       
+    });
+
+    const [experienceDesignationAnime, setExperienceDesignationAnime] = useState({
+
+        transform: "scale(0)",
+        filter: "blur(20px)",
+
+    });
+
+    const [experienceYearsAnimation, setExperienceYearsAnimation] = useState({
+
+        transform: "scale(0)",
+        filter: "blur(20px)",
+
+    });
+
+    const [experienceParaTextAnime, setExperienceParaTextAnime] = useState({
+
+        transform: "translateX(-1000px) skew(-50deg)",
+        filter: "blur(20px)",
+
+    });
+
+    const [experienceImageAnime, setExperienceImageAnime] = useState({
+
+        transform: "translateX(1000px) skew(50deg)",
+        filter: "blur(20px)",
+
     });
 
     function handelExperienceScroll() {
@@ -43,11 +64,42 @@ function Experience() {
 
                 setCompanyNameAnimation({
 
-                    transform: "translateY(0px)",
-                    transition: "all 0.8s ease",
+                    transform: "scale(1)",
+                    transition: "all 0.8s ease 0.2s",
                     filter: "blur(0px)",
 
                 });
+
+                setExperienceDesignationAnime({
+
+                    transform: "scale(1)",
+                    filter: "blur(0px)",
+                    transition: "all 0.8s ease 0.3s"
+
+                });
+
+                setExperienceYearsAnimation({
+
+                    transform: "scale(1)",
+                    filter: "blur(0px)",
+                    transition: "all 0.8s ease 0.4s",
+
+                });
+
+                setExperienceParaTextAnime({
+
+                    transform: "translateX(0px) skew(0deg)",
+                    transition: "all 0.8s ease 0.5s",
+
+                });
+
+                setExperienceImageAnime({
+
+                    transform: "translateX(0px) skew(0deg)",
+                    transition: "all 0.8s ease 0.6s",
+                    filter: "blur(0px)",
+
+                })
 
             } else {
                 
@@ -61,8 +113,40 @@ function Experience() {
 
                 setCompanyNameAnimation({
 
-                    transform: "translateY(500px)",
+                    transform: "scale(0)",
                     transition: 'all 0.8s ease',
+                    filter: "blur(20px)",
+
+                });
+
+                setExperienceDesignationAnime({
+
+                    transform: "scale(0)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(20px)",
+
+                });
+
+                setExperienceYearsAnimation({
+
+                    transform: "scale(0)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(20px)",
+
+                });
+
+                setExperienceParaTextAnime({
+
+                    transform: "translateX(-1000px) skew(-50deg)",
+                    transition: "all 0.8s ease",
+                    filter: 'blur(20px)'
+
+                });
+
+                setExperienceImageAnime({
+
+                    transform: "translateX(1000px) skew(50deg)",
+                    transition: "all 0.8s ease",
                     filter: "blur(20px)",
 
                 })
@@ -106,8 +190,8 @@ function Experience() {
                         </div>
                         <div className={ExperienceStyle.experienceContentText}>
                             
-                            <h4>{ExperienceTxt.designation}</h4>
-                            <span> {ExperienceTxt.yearsOfExperience} </span>
+                            <h4 style={experienceDesignationAnime}>{ExperienceTxt.designation}</h4>
+                            <span style={experienceYearsAnimation}> {ExperienceTxt.yearsOfExperience} </span>
                         
                         </div>
 
@@ -115,7 +199,7 @@ function Experience() {
 
                     <div className={ExperienceStyle.experienceSubContentText}>
 
-                        <div className={ExperienceStyle.experienceparatext}>
+                        <div className={ExperienceStyle.experienceparatext} style={experienceParaTextAnime}>
 
                             <p><FaHandPointRight />{ExperienceTxt.bullet1}</p>
                             <p><FaHandPointRight />{ExperienceTxt.bullet2}</p>
@@ -124,9 +208,9 @@ function Experience() {
                             <p><FaHandPointRight />{ExperienceTxt.bullet5}</p>
 
                         </div>
-                        <div className={ExperienceStyle.experienceimage}>
+                        <div className={ExperienceStyle.experienceimage} style={experienceImageAnime}>
 
-                            
+                            {/** Image is used as a background image which is exists in Experience.module.css file */}
 
                         </div>
 

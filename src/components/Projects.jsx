@@ -1,117 +1,90 @@
-// import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Container from '../components/Container';
 import ProjectsStyle from '../../public/styles/Projects.module.css';
 import ProjectCarousel from '../components/Projectcarousel';
 
-// let image = '../../public/images/vionesse image/vionessefinalimage.png';
-// let image2 = '../../public/images/Guitarist image.png';
-// let image3 = "../../public/images/digitalera-new.jpeg";
-// let image4 = "../../public/images/photographer.jpeg";
-
 function Projects() {
 
-    // const [imageScrolling, setImageScrolling] = useState();
-    // const [secondImageScrolling, setSecondImageScrolling] = useState();
-    // const [thirdImageScrolling, setThirdImageScrolling] = useState();
-    // const [fourthImageScrolling, setFourthImageScrolling] = useState();
+    const [portfolioHeadingAnime, setPortfolioHeadingAnime] = useState({
 
-    // function mouseOverScrolling() {
+        transform: "translateY(-500px)",
+        filter: "blur(20px)",
 
-    //     setImageScrolling({
+    });
 
-    //         transform: "translateY(-910px)",
-    //         transition: "all 5s ease",
+    const [projectShowCaseAnimation, setProjectShowCaseAnimation] = useState({
 
-    //     });
+        transform: "translateY(1000px) skewY(50deg)",
+        filter: "blur(50px)",
 
-    // }
+    })
 
-    // function mouseOutScrolling() {
+    function projectSectionScroll() {
         
-    //     setImageScrolling({
+        if (window.innerWidth > 600) {
 
-    //         transform: "translateY(0px)",
-    //         transition: "all 5s ease",
+            if (window.scrollY > 2700) {
+            
+                setPortfolioHeadingAnime({
 
-    //     });
+                    transform: "translateY(0px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(0px)",
 
-    // }
+                });
 
-    // function secondMouseOverScrolling() {
-        
-    //     setSecondImageScrolling({
+                setProjectShowCaseAnimation({
 
-    //         transform: "translateY(-910px)",
-    //         transition: "all 5s ease",
+                    transform: "translateY(0px) skewY(0deg)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(0px)",
 
-    //     });
+                });
 
-    // }
+                
+            } else {
+                
+                setPortfolioHeadingAnime({
 
-    // function secondMouseOutScrolling() {
-        
-    //     setSecondImageScrolling({
+                    transform: "translateY(-500px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(20px)",
 
-    //         transform: "translateY(0px)",
-    //         transition: "all 5s ease"
+                });
 
-    //     });
+                setProjectShowCaseAnimation({
 
-    // }
+                    transform: "translateY(1000px) rotateY(180deg)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(50px)",
 
-    // function thirdMouseOverScrolling() {
-        
-    //     setThirdImageScrolling({
+                });
 
-    //         transform: "translateY(-910px)",
-    //         transition: "all 5s ease"
+            }
 
-    //     });
+        }
 
-    // }
+    }
 
-    // function thirdMouseOutScrolling() {
-        
-    //     setThirdImageScrolling({
+    useEffect(() => {
 
-    //         transform: "translateY(0px)",
-    //         transition: "all 5s ease",
+        setTimeout(() => {
 
-    //     })
+            window.addEventListener("scroll", projectSectionScroll);
 
-    // }
+        })
 
-    // function fourthMouseOverScrolling() {
-        
-    //     setFourthImageScrolling({
-
-    //         transform: "translateY(-500px)",
-    //         transition: "all 3s ease"
-
-    //     });
-
-    // }
-
-    // function fourthMouseOutScrolling() {
-        
-    //     setFourthImageScrolling({
-
-    //         transform: "translateY(0px)",
-    //         transition: "all 5s ease"
-
-    //     })
-
-    // }
+    }, []);
     
     return (
 
         <Container>
 
-            <div id="projects" className={ProjectsStyle.projectContainer}>
+            <div id="projects" className={ProjectsStyle.projectContainer} onScroll={projectSectionScroll}>
 
                 <div className={ProjectsStyle.projectContainerSection}>
 
-                    <h2 className={ProjectsStyle.projectHeading}>
+                    <h2 className={ProjectsStyle.projectHeading} style={portfolioHeadingAnime}>
                         
                         Portfolio <span className={ProjectsStyle.projectHeadingSpan}> Highlights </span>
                     
@@ -119,35 +92,7 @@ function Projects() {
 
                 </div>
 
-                <div className={ProjectsStyle.projectShowCaseContainer}>
-
-                    {/* <div className={ProjectsStyle.subProjectShowCaseContainer}>
-
-                        <div className={ProjectsStyle.projectIframeCustomStyle} onMouseOver={mouseOverScrolling} onMouseOut={mouseOutScrolling}>
-
-                            <a href="https://vionesse.com" target='_blank'><img src={image} style={imageScrolling}/></a>
-
-                        </div>
-
-                        <div className={ProjectsStyle.projectIframeCustomStyle} onMouseOver={secondMouseOverScrolling} onMouseOut={secondMouseOutScrolling}>
-
-                            <a href="https://techs2105.github.io/guitarist/" target='_blank'><img src={image2} style={secondImageScrolling}/></a>
-
-                        </div>
-
-                        <div className={ProjectsStyle.projectIframeCustomStyle} onMouseOver={thirdMouseOverScrolling} onMouseOut={thirdMouseOutScrolling}>
-
-                            <a href="https://techs2105.github.io/digitalera/" target='_blank'><img src={image3} style={thirdImageScrolling}/></a>
-
-                        </div>
-
-                        <div className={ProjectsStyle.projectIframeCustomStyle} onMouseOver={fourthMouseOverScrolling} onMouseOut={fourthMouseOutScrolling}>
-
-                            <a href="https://techs2105.github.io/photographer/" target='_blank'><img src={image4} style={fourthImageScrolling}/></a>
-
-                        </div>
-
-                    </div> */}
+                <div className={ProjectsStyle.projectShowCaseContainer} style={projectShowCaseAnimation}>
 
                     <ProjectCarousel />
 
