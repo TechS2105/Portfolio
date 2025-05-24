@@ -182,7 +182,7 @@ function About() {
                         <p style={aboutpara2}>I’m driven by the challenge of solving real-world problems through intuitive and efficient digital solutions. Whether working independently or as part of a team, I aim to create products that are both functional and visually engaging. This portfolio highlights my technical skills, creative thinking, and dedication to continuous learning. If you’re interested in collaborating or learning more about my work, feel free to reach out—I’m always open to exciting opportunities and new challenges.
                         </p>
 
-                        <button style={aboutbtn}><a href="../../public/files/Sovan Sundar Dey Resume.pdf" target='_blank'> Know More About Me </a></button>
+                        <button style={aboutbtn}><a href="/files/Sovan Sundar Dey Resume.pdf" target='_blank'> Know More About Me </a></button>
                         <a href='/files/Sovan Sundar Dey Resume.pdf' style={cvdownloadbtn} download>Download CV <LuDownload /></a>
                         
                     </div>
