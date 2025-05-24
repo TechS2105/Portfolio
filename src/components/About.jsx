@@ -3,7 +3,7 @@ import Container from '../components/Container';
 import AboutStyle from '../../public/styles/About.module.css';
 import { LuDownload } from "react-icons/lu";
 
-let image = "../../public/images/image4.jpg";
+let image = "/images/image4.jpg";
 
 function About() {
 

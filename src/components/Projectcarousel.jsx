@@ -14,49 +14,49 @@ function ProjectCarousel() {
 
                     <ProjectImage
                     
-                        image="../../public/images/vionesse image/vionessefinalimage.png"
+                        image="/images/vionesse image/vionessefinalimage.png"
                         imagelink = "https://www.vionesse.com"
                         
                     /> 
 
                     <ProjectImage
                     
-                        image="../../public/images/digitalera-new.jpeg"
+                        image="/images/digitalera-new.jpeg"
                         imagelink="https://techs2105.github.io/digitalera/"
                         
                     />
 
                     <ProjectImage
                     
-                        image="../../public/images/Guitarist image.png"
+                        image="/images/Guitarist image.png"
                         imagelink="https://techs2105.github.io/guitarist/"
                         
                     />
 
                     <ProjectImage
                     
-                        image="../../public/images/photographer.jpeg"
+                        image="/images/photographer.jpeg"
                         imagelink="https://techs2105.github.io/photographer/"
                         
                     />
 
                     <ProjectImage
                     
-                        image="../../public/images/iiihmimage.png"
+                        image="/images/iiihmimage.png"
                         imagelink="https://www.iiihm.in/"
                         
                     />
 
                     <ProjectImage
                     
-                        image="../../public/images/cagcollegeimage.png"
+                        image="/images/cagcollegeimage.png"
                         imagelink="https://thecagcollege.in/"
                         
                     />
 
                     <ProjectImage
                     
-                        image="../../public/images/cagschool.png"
+                        image="/images/cagschool.png"
                         imagelink="https://www.cagschool.org/"
                         
                     />
@@ -67,49 +67,49 @@ function ProjectCarousel() {
 
                     <ProjectImage
 
-                        image="../../public/images/vionesse image/vionessefinalimage.png"
+                        image="/images/vionesse image/vionessefinalimage.png"
                         imagelink = "https://www.vionesse.com"
                         
                     /> 
 
                     <ProjectImage
 
-                        image="../../public/images/digitalera-new.jpeg"
+                        image="/images/digitalera-new.jpeg"
                         imagelink="https://techs2105.github.io/digitalera/"
                         
                     />
 
                     <ProjectImage
 
-                        image="../../public/images/Guitarist image.png"
+                        image="/images/Guitarist image.png"
                         imagelink="https://techs2105.github.io/guitarist/"
                         
                     />
 
                     <ProjectImage
 
-                        image="../../public/images/photographer.jpeg"
+                        image="/images/photographer.jpeg"
                         imagelink="https://techs2105.github.io/photographer/"
                         
                     />
 
                     <ProjectImage
                     
-                        image="../../public/images/iiihmimage.png"
+                        image="/images/iiihmimage.png"
                         imagelink="https://www.iiihm.in/"
                         
                     />
 
                     <ProjectImage
                     
-                        image="../../public/images/cagcollegeimage.png"
+                        image="/images/cagcollegeimage.png"
                         imagelink="https://thecagcollege.in/"
                         
                     />
 
                     <ProjectImage
                     
-                        image="../../public/images/cagschool.png"
+                        image="/images/cagschool.png"
                         imagelink="https://www.cagschool.org/"
                         
                     />

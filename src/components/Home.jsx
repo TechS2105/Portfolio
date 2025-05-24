@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 
-let image = "../../public/images/image2.jpg";
+let image = "/images/image2.jpg";
 
 function Home() {
 

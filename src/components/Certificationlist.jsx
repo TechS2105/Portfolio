@@ -14,14 +14,14 @@ function Certificationlist() {
 
                     <CertificateImages
         
-                        image="../../public/images/udemy 1.png"
+                        image="/images/udemy 1.png"
                         imagelink="../../public/images/udemy 1.png"
             
                     />
 
                     <CertificateImages 
         
-                        image="../../public/images/udemy 2.png"
+                        image="/images/udemy 2.png"
                         imagelink="../../public/images/udemy 2.png"
             
                     />
@@ -32,14 +32,14 @@ function Certificationlist() {
 
                     <CertificateImages
 
-                        image="../../public/images/udemy 1.png"
+                        image="/images/udemy 1.png"
                         imagelink="../../public/images/udemy 1.png"
 
                     />
 
                     <CertificateImages 
 
-                        image="../../public/images/udemy 2.png"
+                        image="/images/udemy 2.png"
                         imagelink="../../public/images/udemy 2.png"
 
                     />
