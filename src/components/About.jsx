@@ -183,7 +183,7 @@ function About() {
                         </p>
 
                         <button style={aboutbtn}><a href="../../public/files/Sovan Sundar Dey Resume.pdf" target='_blank'> Know More About Me </a></button>
-                        <a href='../../public/files/Sovan Sundar Dey Resume.pdf' style={cvdownloadbtn} download>Download CV <LuDownload /></a>
+                        <a href='/files/Sovan Sundar Dey Resume.pdf' style={cvdownloadbtn} download>Download CV <LuDownload /></a>
                         
                     </div>
 
