@@ -61,32 +61,26 @@
 .certificationName > .certificationHeading{
 
     line-height: 120px;
+    overflow: hidden;
 
 }
 
-.certificationName h2 > .certificationHeading1 span{
+.certificationHeading > .certificationTextHeading{
 
     font-family: 'certificationfont';
     font-size: 100px;
-    letter-spacing: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    /* overflow: hidden; */
 
 }
 
-.certificationName h2 > .certificationHeading2 span{
+.certificationTextHeading > span{
 
-    font-family: 'certificationfont';
-    font-size: 100px;
-    letter-spacing: 5px;
-    background-color: var(--main-color);
-    color: var(--third-color);
-    padding: 0px 10px;
-
-}
-
-.certificationName h2 > .certificationHeading3 span{
-
-    font-family: 'certificationfont';
-    font-size: 100px;
-    letter-spacing: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
 
 }

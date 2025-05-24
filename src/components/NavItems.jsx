@@ -2,6 +2,12 @@ import React, {useState, useEffect} from 'react';
 import NavbarStyle from '../../public/styles/Navbar.module.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+const active = {
+
+    color: "#e8b327"
+
+}
+
 function Navitem({ logo }) {
 
     const [logoStyle, setLogoStyle] = useState({
@@ -188,6 +194,7 @@ function Navitem({ logo }) {
                             <ul className={NavbarStyle.unorderNavList}>
 
                                 <li style={list1}><AnchorLink offset={100} href='#home'> HOME </AnchorLink></li>
+
                                 <li style={list2}><AnchorLink offset={90} href='#about'> ABOUT  </AnchorLink></li>
                                 <li style={list3}><AnchorLink offset={90} href='#experience'> EXPERIENCE  </AnchorLink></li>
                                 <li style={list4}><AnchorLink offset={90} href='#education'> EDUCATION  </AnchorLink></li>
