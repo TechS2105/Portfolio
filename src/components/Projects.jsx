@@ -14,7 +14,7 @@ function Projects() {
 
     const [projectShowCaseAnimation, setProjectShowCaseAnimation] = useState({
 
-        transform: "translateY(1000px) skewY(50deg)",
+        transform: "translateY(1000px) scale(0)",
         filter: "blur(50px)",
 
     })
@@ -35,8 +35,8 @@ function Projects() {
 
                 setProjectShowCaseAnimation({
 
-                    transform: "translateY(0px) skewY(0deg)",
-                    transition: "all 0.8s ease",
+                    transform: "translateY(0px) scale(1)",
+                    transition: "all 0.8s ease 0.5s",
                     filter: "blur(0px)",
 
                 });
@@ -54,7 +54,7 @@ function Projects() {
 
                 setProjectShowCaseAnimation({
 
-                    transform: "translateY(1000px) rotateY(180deg)",
+                    transform: "translateY(1000px) scale(0)",
                     transition: "all 0.8s ease",
                     filter: "blur(50px)",
 

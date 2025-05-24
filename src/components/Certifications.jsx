@@ -24,6 +24,7 @@ function Certifications() {
         filter: "blur(20px)",
 
     });
+
     
     function handelCertificationScroll() {
         
@@ -55,10 +56,11 @@ function Certifications() {
                 setCertificationHeadingAnime3({
 
                     transform: "translateX(0px) scale(1)",
-                    transition: "all 0.8s ease 0.6s", 
+                    transition: "all 0.8s ease 0.6s",
                     filter: "blur(0px)"
 
-                })
+                });
+
 
             } else {
                 
@@ -86,6 +88,7 @@ function Certifications() {
 
                 });
 
+
             }
 
         }
@@ -100,7 +103,7 @@ function Certifications() {
 
         })
 
-    })
+    }, []);
 
     return (
 
