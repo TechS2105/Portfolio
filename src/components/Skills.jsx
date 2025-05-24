@@ -26,7 +26,7 @@ import { FiChrome } from "react-icons/fi";
 import { FaWordpressSimple } from "react-icons/fa6";
 import { SiGithubcopilot } from "react-icons/si";
 
-let logoimage = '../../public/images/icons8-chatgpt-50.png';
+let logoimage = '/images/icons8-chatgpt-50.png';
 
 function Skills() {
     
