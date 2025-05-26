@@ -13,6 +13,7 @@
     width: 100%;
     height: 100%;
     display: flex;
+    overflow: hidden;
 
 }
 
@@ -25,6 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    overflow: hidden;
 
 }
 
@@ -44,6 +46,8 @@
     text-shadow: 10px 10px 2px #e8b327;
     font-style: italic;
     letter-spacing: 10px;
+    overflow: hidden;
+    padding-right: 10px;
 
 }
 
@@ -122,6 +126,12 @@
     display: flex;
     height: 100%;
     align-items: center;
+
+}
+
+.frontend > .unorderlist{
+
+    overflow: hidden;
 
 }
 
@@ -216,6 +226,12 @@
 
 }
 
+.backend > .unorderlist{
+
+    overflow: hidden;
+
+}
+
 .backend > .unorderlist ul{
 
     display: flex;
@@ -307,6 +323,12 @@
 
 }
 
+.database > .unorderlist {
+
+    overflow: hidden;
+
+}
+
 .database > .unorderlist ul{
 
     display: flex;
@@ -380,6 +402,12 @@
     font-family: 'skillsfont';
     letter-spacing: 2px;
     font-size: 18px;
+
+}
+
+.versionControl > .unorderlist{
+
+    overflow: hidden;
 
 }
 
@@ -458,6 +486,12 @@
 
 }
 
+.tools > .unorderlist{
+
+    overflow: hidden;
+
+}
+
 .tools > .unorderlist ul{
 
     display: flex;
@@ -525,6 +559,12 @@
     color: #efcb55;
     letter-spacing: 2px;
     font-size: 18px;
+
+}
+
+.aiTools > .unorderlist{
+
+    overflow: hidden;
 
 }
 

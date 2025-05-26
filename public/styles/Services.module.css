@@ -116,6 +116,16 @@
     overflow: hidden;
     box-shadow: 2px 2px 5px #292929;
     position: relative;
+    transition: all 0.8s ease;
+
+}
+
+.secondSubServiceContainerSection > .serviceBox:hover{
+
+    transform: scale(1.04) translateY(-10px);
+    /* background-color: #efcb55; */
+    background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+    background-size: cover;
 
 }
 

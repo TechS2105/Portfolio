@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Container from './Container';
 import SkillStyle from '../../public/styles/Skills.module.css'; 
 import { MdOutlineCodeOff } from "react-icons/md";
@@ -29,12 +29,148 @@ import { SiGithubcopilot } from "react-icons/si";
 let logoimage = '/images/icons8-chatgpt-50.png';
 
 function Skills() {
+
+    const [skillFirstHeading, setSkillFirstHeading] = useState({
+
+        transform: "translateY(500px)",
+        filter: "blur(20px)",
+
+    });
+
+    const [skillSecondHeading, setSkillSecondHeading] = useState({
+
+        transform: "translateY(500px)",
+        filter: "blur(20px)",
+
+    });
+
+    const [skillCodeIcon, setSkillCodeIcon] = useState({
+
+        transform: "scale(0)",
+        filter: "blur(20px)",
+
+    });
+
+    const [frontEnd, setFrontEnd] = useState({
+
+        transform: "translateX(-500px)",
+        filter: "blur(20px)",
+
+    });
+
+    const [skillName, setSkillName] = useState({
+
+        transform: "translateY(-100px)",
+
+    });
+
+    function handelSkillScroll() {
+        
+        if(window.innerWidth > 600){
+
+            if(window.scrollY > 3400){
+
+                setSkillFirstHeading({
+
+                    transform: "translateY(0px)",
+                    filter: "blur(0px)",
+                    transition: "all 0.8s ease"
+
+                });
+
+                setSkillSecondHeading({
+
+                    transform: "translateY(0px)",
+                    filter: "blur(0px)",
+                    transition: "all 0.8s ease 0.5s"
+
+                });
+
+                setSkillCodeIcon({
+
+                    transform: 'scale(1) rotateY(360deg)',
+                    transition: "all 0.8s ease 0.8s",
+                    filter: "blur(0px)",
+
+                });
+
+                setFrontEnd({
+
+                    transform: "translateX(0px)",
+                    transition: "all 0.8s ease 1s",
+                    filter: "blur(0px)",
+
+                });
+
+                setSkillName({
+
+                    transform: "translateY(0px)",
+                    transition: "all 0.8s ease 1.1s",
+
+                });
+
+            }else{
+
+                setSkillFirstHeading({
+
+                    transform: "translateY(500px)",
+                    filter: "blur(20px)",
+                    transition: "all 0.8s ease",
+
+                });
+
+                setSkillSecondHeading({
+
+                    transform: "translateY(500px)",
+                    filter: "blur(20px)",
+                    transition: 'all 0.8s ease',
+
+                });
+
+                setSkillCodeIcon({
+
+                    transform: "scale(0)",
+                    filter: "blur(20px)",
+                    transition: "all 0.8s ease",
+
+                });
+
+                setFrontEnd({
+
+                    transform: "translateX(-500px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(20px)",
+
+                });
+
+                setSkillName({
+
+                    transform: "translateY(-100px)",
+                    transition: "all 0.8s ease",
+
+                })
+
+            }
+
+        }
+
+    }
+
+    useEffect(() => {
+
+        setTimeout(() => {
+
+            window.addEventListener("scroll", handelSkillScroll);
+
+        })
+
+    }, []);
     
     return (
 
         <Container> 
 
-            <div id="skills" className={SkillStyle.skillContainer}>
+            <div id="skills" className={SkillStyle.skillContainer} onScroll={handelSkillScroll}>
 
                 <div className={SkillStyle.skillSubContainer1}>
 
@@ -42,17 +178,17 @@ function Skills() {
 
                         <div className={SkillStyle.headingDevideContent}>
                             
-                            <span>My</span>
+                            <span style={skillFirstHeading}>My</span>
                         
                         </div>
                         <div className={SkillStyle.headingDevideContent}>
                             
-                            <span> Coding <MdOutlineCodeOff /> </span>
+                            <span style={skillSecondHeading}> Coding <MdOutlineCodeOff style={skillCodeIcon}/> </span>
                         
                         </div>
                         <div className={SkillStyle.headingDevideContent}>
                             
-                            <span>Expertise</span>
+                            <span style={skillFirstHeading}>Expertise</span>
                         
                         </div>
 
@@ -65,11 +201,11 @@ function Skills() {
 
                         <div className={SkillStyle.frontend}>
 
-                            <h3> <SiFrontendmentor /> Front-End </h3>
+                            <h3 style={frontEnd}> <SiFrontendmentor /> Front-End </h3>
 
                             <div className={SkillStyle.unorderlist}>
 
-                                <ul>
+                                <ul style={skillName}>
 
                                     <li> HTML </li>
                                     <li> CSS </li>
@@ -122,11 +258,11 @@ function Skills() {
                         </div>
                         <div className={SkillStyle.backend}>
 
-                            <h3> <SiBackendless /> Back-End </h3>
+                            <h3 style={frontEnd}> <SiBackendless /> Back-End </h3>
 
                             <div className={SkillStyle.unorderlist}>
 
-                                <ul>
+                                <ul style={skillName}>
 
                                     <li> NodeJS </li>
                                     <li> ExpressJS </li>
@@ -163,11 +299,11 @@ function Skills() {
                         </div>
                         <div className={SkillStyle.database}>
 
-                            <h3> <BsDatabaseFillCheck /> Database </h3>
+                            <h3 style={frontEnd}> <BsDatabaseFillCheck /> Database </h3>
 
                             <div className={SkillStyle.unorderlist}>
 
-                                <ul>
+                                <ul style={skillName}>
 
                                     <li> PostgresSQL</li>
                                     <li> SQL </li>
@@ -204,11 +340,11 @@ function Skills() {
                         </div>
                         <div className={SkillStyle.versionControl}>
 
-                            <h3> <GoVersions /> Version Control </h3>
+                            <h3 style={frontEnd}> <GoVersions /> Version Control </h3>
 
                             <div className={SkillStyle.unorderlist}>
 
-                                <ul>
+                                <ul style={skillName}>
 
                                     <li> Git </li>
                                     <li> GitHub </li>
@@ -245,11 +381,11 @@ function Skills() {
                         </div>
                         <div className={SkillStyle.tools}>
 
-                            <h3> <BsTools /> Tools </h3>
+                            <h3 style={frontEnd}> <BsTools /> Tools </h3>
 
                             <div className={SkillStyle.unorderlist}>
 
-                                <ul>
+                                <ul style={skillName}>
 
                                     <li> VS-Code </li>
                                     <li> Postman </li>
@@ -294,11 +430,11 @@ function Skills() {
                         </div>
                         <div className={SkillStyle.aiTools}>
 
-                            <h3> <GiArtificialIntelligence /> AI Tools </h3>
+                            <h3 style={frontEnd}> <GiArtificialIntelligence /> AI Tools </h3>
 
                             <div className={SkillStyle.unorderlist}>
 
-                                <ul>
+                                <ul style={skillName}>
 
                                     <li> GitHub Copilot </li>
                                     <li> ChatGPT </li>
