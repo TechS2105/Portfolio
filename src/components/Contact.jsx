@@ -18,6 +18,20 @@ function Contact() {
         
     });
 
+    const [contactMapAnime, setContactMapAnime] = useState({
+
+        transform: "translateY(1000px)",
+        filter: "blur(20px)",
+
+    });
+
+    const [contactFormAnime, setContactFormAnime] = useState({
+
+        transform: "translateY(1000px)",
+        filter: "blur(20px)",
+
+    })
+
     function handelContactScroll() {
         
         if (window.innerWidth > 600) {
@@ -40,6 +54,22 @@ function Contact() {
 
                 });
 
+                setContactMapAnime({
+
+                    transform: "translateY(0px)",
+                    filter: "blur(0px)",
+                    transition: 'all 0.8s ease 0.7s',
+
+                });
+
+                setContactFormAnime({
+
+                    transform: "translateY(0px)",
+                    filter: "blur(0px)",
+                    transition: "all 0.8s ease 0.9s",
+
+                });
+
             } else {
                 
                 setContactHeadingAnime({
@@ -51,6 +81,22 @@ function Contact() {
                 });
 
                 setContactInfoAnime({
+
+                    transform: "translateY(1000px)",
+                    filter: "blur(20px)",
+                    transition: "all 0.8s ease",
+
+                });
+
+                setContactMapAnime({
+
+                    transform: "translateY(1000px)",
+                    filter: 'blur(20px)',
+                    transition: "all 0.8s ease",
+
+                });
+
+                setContactFormAnime({
 
                     transform: "translateY(1000px)",
                     filter: "blur(20px)",
@@ -96,12 +142,12 @@ function Contact() {
                         <div className={ContactStyle.contactsInfo}>sovandey2105@gmail.com</div>       
 
                     </div>
-                    <div className={ContactStyle.contactMap}>
+                    <div className={ContactStyle.contactMap} style={contactMapAnime}>
                             
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29342.240055881757!2d88.08314294547017!3d23.178228012110967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f859e1236f5c91%3A0x87bd2167faca5f0f!2z4Kau4KeH4Kau4Ka-4Kaw4Ka_LCDgppPgpq_gprzgp4fgprjgp43gpp8g4Kas4KeH4KaZ4KeN4KaX4Kay!5e0!3m2!1sbn!2sin!4v1748079013678!5m2!1sbn!2sin" style={{width: "100%", height: "100%", border: "0"}} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
                     </div>
-                    <div className={ContactStyle.contactForm}>  
+                    <div className={ContactStyle.contactForm} style={contactFormAnime}>  
 
                         <form action="#">
 
