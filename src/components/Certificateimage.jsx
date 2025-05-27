@@ -54,7 +54,7 @@ function Certificateimage(props) {
 
         <div className={CertificateImage.certificateImageStyle} onScroll={handelCertificateImageScroll}>
 
-            <a href={props.imagelink} download> <img src={props.image} alt={props.image} style={certificateImageAnime}/> </a>
+            <a href={props.imagelink} target='_blank'> <img src={props.image} alt={props.image} style={certificateImageAnime}/> </a>
 
         </div>
 

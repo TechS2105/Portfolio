@@ -61,6 +61,14 @@ function Skills() {
     const [skillName, setSkillName] = useState({
 
         transform: "translateY(-100px)",
+        filter: "blur(20px)",
+
+    });
+
+    const [skillCodeLogo, setSkillCodeLogo] = useState({
+
+        transform: "scale(0)",
+        filter: "blur(20px)",
 
     });
 
@@ -106,8 +114,17 @@ function Skills() {
 
                     transform: "translateY(0px)",
                     transition: "all 0.8s ease 1.1s",
+                    filter: "blur(0px)",
 
                 });
+
+                setSkillCodeLogo({
+
+                    transform: 'scale(1)',
+                    transition : "all 0.8s ease 1.4s",
+                    filter: "blur(0px)"
+
+                })
 
             }else{
 
@@ -147,6 +164,15 @@ function Skills() {
 
                     transform: "translateY(-100px)",
                     transition: "all 0.8s ease",
+                    filter: "blur(20px)",
+
+                });
+
+                setSkillCodeLogo({
+
+                    transform: "scale(0)",
+                    transition: 'all 0.8s ease',
+                    filter: "blur(20px)"
 
                 })
 
@@ -218,7 +244,7 @@ function Skills() {
 
                             </div>
 
-                            <div className={SkillStyle.codeLogo}>
+                            <div className={SkillStyle.codeLogo} style={skillCodeLogo}>
 
                                 <ul>
 
@@ -271,7 +297,7 @@ function Skills() {
 
                             </div>
 
-                            <div className={SkillStyle.codeLogo}>
+                            <div className={SkillStyle.codeLogo} style={skillCodeLogo}>
 
                                 <ul>
 
@@ -312,7 +338,7 @@ function Skills() {
 
                             </div>
 
-                            <div className={SkillStyle.codeLogo}>
+                            <div className={SkillStyle.codeLogo} style={skillCodeLogo}>
 
                                 <ul>
 
@@ -353,7 +379,7 @@ function Skills() {
 
                             </div>
 
-                            <div className={SkillStyle.codeLogo}>
+                            <div className={SkillStyle.codeLogo} style={skillCodeLogo}>
 
                                 <ul>
 
@@ -396,7 +422,7 @@ function Skills() {
 
                             </div>
 
-                            <div className={SkillStyle.codeLogo}>
+                            <div className={SkillStyle.codeLogo} style={skillCodeLogo}>
 
                                 <ul>
 
@@ -443,7 +469,7 @@ function Skills() {
 
                             </div>
 
-                            <div className={SkillStyle.codeLogo}>
+                            <div className={SkillStyle.codeLogo} style={skillCodeLogo}>
 
                                 <ul>
 
