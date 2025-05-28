@@ -4,15 +4,15 @@ import Navbar from './components/Navbar';
 import ResponsiveNav from './responsive_components/Responsivenav'
 // import SiteLoader from './components/Siteloader';
 import Home from './components/Home';
-import About from './components/About';
-import Education from './components/Education';
-import Skills from './components/Skills';
-import Experience from './components/Experience';
-import Services from './components/Services';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Certifications from './components/Certifications';
-import Footer from './components/Footer';
+// import About from './components/About';
+// import Education from './components/Education';
+// import Skills from './components/Skills';
+// import Experience from './components/Experience';
+// import Services from './components/Services';
+// import Projects from './components/Projects';
+// import Contact from './components/Contact';
+// import Certifications from './components/Certifications';
+// import Footer from './components/Footer';
 
 function App() {
   
@@ -24,7 +24,7 @@ function App() {
       <Navbar />
       <ResponsiveNav />
       <Home />
-      <About />
+      {/* <About />
       <Experience />
       <Education />
       <Projects />
@@ -32,7 +32,7 @@ function App() {
       <Services />
       <Certifications />
       <Contact />
-      <Footer />
+      <Footer /> */}
           
     </>
 

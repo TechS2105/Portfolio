@@ -6,3 +6,15 @@
     overflow: hidden;
 
 }
+
+/* MOBILE VIEW */
+
+@media only  screen and (max-width: 600px) {
+
+    .container{
+
+        height: 100vh;
+
+    }
+    
+}

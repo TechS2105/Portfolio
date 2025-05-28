@@ -65,130 +65,192 @@ function Home() {
 
     function loadContainer() {
         
-        useEffect(() => {
+        if (window.innerWidth > 600) {
+            
+            useEffect(() => {
 
-            setTimeout(() => {
+                setTimeout(() => {
 
-                setHeadingAnimation({
+                    setHeadingAnimation({
 
-                    transform: "translateX(0px)",
-                    filter: "blur(0px)",
-                    transition: "all 1s ease"
+                        transform: "translateX(0px)",
+                        filter: "blur(0px)",
+                        transition: "all 1s ease"
 
-                });
+                    });
 
-            }, 1800)
+                }, 1800)
 
-        }, []);
+            }, []);
 
-        useEffect(() => {
+            useEffect(() => {
 
-            setTimeout(() => {
+                setTimeout(() => {
 
-                setSpanAnimation({
+                    setSpanAnimation({
 
-                    transform: "translateX(0px)",
-                    filter: "blur(0px)",
-                    transition: "all 1s ease"
+                        transform: "translateX(0px)",
+                        filter: "blur(0px)",
+                        transition: "all 1s ease"
 
-                })
+                    })
 
-            }, 1500)
+                }, 1500)
 
-        }, []);
+            }, []);
 
-        useEffect(() => {
+            useEffect(() => {
 
-            setTimeout(() => {
+                setTimeout(() => {
 
-                setPara1({
+                    setPara1({
 
-                    transform: "scale(1)",
-                    transition: "all 0.8s ease"
+                        transform: "scale(1)",
+                        transition: "all 0.8s ease"
 
-                })
+                    })
 
-            }, 2000)
+                }, 2000)
 
-        }, []);
+            }, []);
 
-        useEffect(() => {
+            useEffect(() => {
 
-            setTimeout(() => {
+                setTimeout(() => {
 
-                setPara2({
+                    setPara2({
 
-                    transform: "scale(1)",
-                    transition: "all 0.8s ease",
-                    filter: "blur(0)"
+                        transform: "scale(1)",
+                        transition: "all 0.8s ease",
+                        filter: "blur(0)"
 
-                })
+                    })
 
-            }, 2100)
+                }, 2100)
 
-        });
+            });
 
-        useEffect(() => {
+            useEffect(() => {
 
-            setTimeout(() => {
+                setTimeout(() => {
 
-                setLoadImage({
+                    setLoadImage({
 
-                    transform: "translateY(0px)",
-                    transition: "all 0.8s ease",
-                    filter: "blur(0px)",
-                    border: "10px double  #efcb55",
+                        transform: "translateY(0px)",
+                        transition: "all 0.8s ease",
+                        filter: "blur(0px)",
+                        border: "10px double  #efcb55",
         
+                    })
+
+                }, 2000)
+
+            }, []);
+
+            useEffect(() => {
+
+                setTimeout(() => {
+
+                    setSociallink1({
+
+                        transform: "translateY(0px)",
+                        transition: "all 0.8s ease",
+
+                    });
+
+                }, 2100)
+
+            }, []);
+
+            useEffect(() => {
+
+                setTimeout(() => {
+
+                    setSociallink2({
+
+                        transform: "translateY(0px)",
+                        transition: "all 0.8s ease"
+
+                    })
+
+                }, 2100)
+
+            }, []);
+
+            useEffect(() => {
+
+                setTimeout(() => {
+
+                    setSociallink3({
+
+                        transform: "translateY(0px)",
+                        transition: "all 0.8s ease"
+
+                    })
+
+                }, 2100);
+
+            }, [])
+            
+        } else if (window.innerWidth < 600) {
+            
+            useEffect(() => {
+
+                setTimeout(() => {
+                   
+                    setHeadingAnimation({
+
+                        transform: "translateY(0px)"
+
+                    });
+
+                    setSpanAnimation({
+
+                        transform: "translateY(0px)"
+
+                    });
+
+                    setPara1({
+
+                        transform: "scale(1)"
+
+                    });
+
+                    setPara2({
+
+                        transform: "scale(1)"
+
+                    });
+                    
+                    setSociallink1({
+
+                        transform: "translateY(0px)"
+
+                    });
+
+                    setSociallink2({
+
+                        transform: "translateY(0px)"
+
+                    });
+                    
+                    setSociallink3({
+
+                        transform: "translateY(0px)"
+
+                    });
+
+                    setLoadImage({
+
+                        transform: 'translateY(0px)'
+
+                    });
+
                 })
 
-            }, 2000)
+            }, [])
 
-        }, []);
-
-        useEffect(() => {
-
-            setTimeout(() => {
-
-                setSociallink1({
-
-                    transform: "translateY(0px)",
-                    transition: "all 0.8s ease",
-
-                });
-
-            }, 2100)
-
-        }, []);
-
-        useEffect(() => {
-
-            setTimeout(() => {
-
-                setSociallink2({
-
-                    transform: "translateY(0px)",
-                    transition: "all 0.8s ease"
-
-                })
-
-            }, 2100)
-
-        }, []);
-
-        useEffect(() => {
-
-            setTimeout(() => {
-
-                setSociallink3({
-
-                    transform: "translateY(0px)",
-                    transition: "all 0.8s ease"
-
-                })
-
-            }, 2100);
-
-        }, [])
+        }
 
     }
     
@@ -202,7 +264,7 @@ function Home() {
 
                     <div className={HomeStyle.textsection} onLoad={loadContainer()}>
 
-                        <span style={spanAnimation}> Hello,</span>
+                        <span style={spanAnimation}> Hello, </span>
 
                         <div className={HomeStyle.headingtext}>
 
