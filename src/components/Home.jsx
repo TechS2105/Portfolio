@@ -254,7 +254,7 @@ function Home() {
                     setLoadImage({
 
                         transform: 'translateY(0px)',
-                        filter: "blur(0px)",
+                        filter: "blur(0px) drop-shadow(5px 5px 10px #292929)",
                         transition: "all 0.8s ease 1s"
 
                     });
