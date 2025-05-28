@@ -2,15 +2,15 @@ import React from 'react';
 import ResponsiveNavStyle from '../../public/styles/Responsive Style/Responsivenav.module.css';
 import ResponsiveNavIcon from '../responsive_components/Responsivenavicon';
 
-let img1 = '../../public/images/responsive icon/home (1).png';
-let img2 = '../../public/images/responsive icon/information.png';
-let img3 = '../../public/images/responsive icon/quality.png';
-let img4 = '../../public/images/responsive icon/graduate.png';
-let img5 = '../../public/images/responsive icon/portfolio.png';
-let img6 = '../../public/images/responsive icon/leadership-skills.png';
-let img7 = '../../public/images/responsive icon/service.png';
-let img8 = '../../public/images/responsive icon/online-certificate.png';
-let img9 = '../../public/images/responsive icon/contact-mail.png';
+let img1 = '/images/responsive icon/home (1).png';
+let img2 = '/images/responsive icon/information.png';
+let img3 = '/images/responsive icon/quality.png';
+let img4 = '/images/responsive icon/graduate.png';
+let img5 = '/images/responsive icon/portfolio.png';
+let img6 = '/images/responsive icon/leadership-skills.png';
+let img7 = '/images/responsive icon/service.png';
+let img8 = '/images/responsive icon/online-certificate.png';
+let img9 = '/images/responsive icon/contact-mail.png';
 
 function Responsivenavitems() {
     
