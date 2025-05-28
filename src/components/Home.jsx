@@ -11,7 +11,7 @@ function Home() {
 
     const [headingAnimation, setHeadingAnimation] = useState({
 
-        transform: "translateY(-1000px)",
+        transform: "translateY(-500px)",
         filter: "blur(50px)"
 
     });
@@ -200,49 +200,62 @@ function Home() {
                    
                     setHeadingAnimation({
 
-                        transform: "translateY(0px)"
+                        transform: "translateY(0px)",
+                        transition: "all 0.8s ease 0.5s",
+                        filter: "blur(0px)",
 
                     });
 
                     setSpanAnimation({
 
-                        transform: "translateY(0px)"
+                        transform: "translateY(0px)",
+                        transition: 'all 0.8s ease',
+                        filter: "blur(0px)",
 
                     });
 
                     setPara1({
 
-                        transform: "scale(1)"
+                        transform: "scale(1)",
+                        transition: "all 0.8s ease 0.7s",
+                        filter: "blur(0px)",
 
                     });
 
                     setPara2({
 
-                        transform: "scale(1)"
+                        transform: "scale(1)",
+                        filter: 'blur(0px)',
+                        transition: "all 0.8s ease 0.7s",
 
                     });
                     
                     setSociallink1({
 
-                        transform: "translateY(0px)"
+                        transform: "translateY(0px)",
+                        transition: "all 0.8s ease 0.9s"
 
                     });
 
                     setSociallink2({
 
-                        transform: "translateY(0px)"
+                        transform: "translateY(0px)",
+                        transition: 'all 0.8s ease 0.9s'
 
                     });
                     
                     setSociallink3({
 
-                        transform: "translateY(0px)"
+                        transform: "translateY(0px)",
+                        transition: "all 0.8s ease 0.9s",
 
                     });
 
                     setLoadImage({
 
-                        transform: 'translateY(0px)'
+                        transform: 'translateY(0px)',
+                        filter: "blur(0px)",
+                        transition: "all 0.8s ease 1s"
 
                     });
 
