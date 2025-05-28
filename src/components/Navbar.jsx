@@ -5,11 +5,14 @@ function Navbar() {
     
     return (
 
-        <NavItem
+        <>
+            <NavItem
         
-            logo="SSD"
+                logo="SSD"
             
-        />
+            />
+            
+        </>
 
     );
 

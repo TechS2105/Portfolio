@@ -1,0 +1,24 @@
+.resNavUl{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-size: 30px;
+
+}
+
+.resNavUl > li img{
+
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+
+}
+
+.resNavUl > li img{
+
+    padding: 10px 4px 10px 4px;
+
+}
