@@ -204,10 +204,10 @@
 
     .container2 > img{
 
-        width: 100%;
+        width: 90%;
         height: 100%;
         border: 20px double #fcfaea;
-        /* border-radius: 0px; */
+        border-radius: 10px;
         position: absolute;
         top: 0;
 
