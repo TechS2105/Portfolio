@@ -11,11 +11,13 @@
 
     .mobileHeader{
 
-        width: 100vw;
-        height: 70px;
-        background-color: var(--secondary-color);
+        width: 100vmin;
+        height: 16vmin;
+        background-color: var(--third-color);
         display: flex;
         align-items: center;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
 
     }
 

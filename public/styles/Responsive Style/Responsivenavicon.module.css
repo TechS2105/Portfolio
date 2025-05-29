@@ -11,8 +11,8 @@
 
 .resNavUl > li img{
 
-    width: 30px;
-    height: 30px;
+    width: 7vmin;
+    height: 7vmin;
     object-fit: cover;
 
 }
