@@ -173,17 +173,25 @@ function About() {
                 </div>
                 <div className={AboutStyle.aboutsection2}>
 
-                    <div className={AboutStyle.aboutcontent}>
+                    <div className={AboutStyle.aboutColorOverlay}>
 
-                        <h2 style={aboutHeading}> About <br /> <span className={AboutStyle.aboutSpanText}> Me  </span>  </h2> 
-                        
-                        <p style={aboutpara1}>I’m a passionate Full-Stack Developer with experience in building responsive, high-performance web applications. I specialize in both front-end and back-end technologies, including HTML, CSS, JavaScript, React, Node.js, Express, and databases like MySQL and PostgreSQL. My approach combines clean, maintainable code with a focus on user experience and scalability.</p>
+                        <div className={AboutStyle.aboutcontent}>
 
-                        <p style={aboutpara2}>I’m driven by the challenge of solving real-world problems through intuitive and efficient digital solutions. Whether working independently or as part of a team, I aim to create products that are both functional and visually engaging. This portfolio highlights my technical skills, creative thinking, and dedication to continuous learning. If you’re interested in collaborating or learning more about my work, feel free to reach out—I’m always open to exciting opportunities and new challenges.
-                        </p>
+                            <h2 style={aboutHeading}> About <br /> <span className={AboutStyle.aboutSpanText}> Me  </span>  </h2> 
+                            
+                            <p style={aboutpara1}>I’m a passionate Full-Stack Developer with experience in building responsive, high-performance web applications. I specialize in both front-end and back-end technologies, including HTML, CSS, JavaScript, React, Node.js, Express, and databases like MySQL and PostgreSQL. My approach combines clean, maintainable code with a focus on user experience and scalability.</p>
 
-                        <button style={aboutbtn}><a href="/files/Sovan Sundar Dey Resume.pdf" target='_blank'> Know More About Me </a></button>
-                        <a href='/files/Sovan Sundar Dey Resume.pdf' style={cvdownloadbtn} download>Download CV <LuDownload /></a>
+                            <p style={aboutpara2}>I’m driven by the challenge of solving real-world problems through intuitive and efficient digital solutions. Whether working independently or as part of a team, I aim to create products that are both functional and visually engaging. This portfolio highlights my technical skills, creative thinking, and dedication to continuous learning. If you’re interested in collaborating or learning more about my work, feel free to reach out—I’m always open to exciting opportunities and new challenges.
+                            </p>
+
+                            <div className={AboutStyle.aboutLinks}>
+
+                                <button style={aboutbtn}><a href="/files/Sovan Sundar Dey Resume.pdf" target='_blank'> Know More About Me </a></button>
+                                <a href='/files/Sovan Sundar Dey Resume.pdf' style={cvdownloadbtn} download>Download CV <LuDownload /></a>
+
+                            </div>
+
+                        </div>
                         
                     </div>
 
