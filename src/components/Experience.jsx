@@ -153,6 +153,78 @@ function Experience() {
 
             }
 
+        } else if (window.innerWidth < 600) {
+            
+            if (window.scrollY > 1500) {
+                
+                setHeadingScrollStyle({
+
+                    transform: "translateY(0px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(0px)",
+
+                });
+
+                setCompanyNameAnimation({
+
+                    transform: 'scale(1)',
+                    transition: "all 0.8s ease 0.5s",
+                    filter: "blur(0px)",
+
+                });
+
+                setExperienceDesignationAnime({
+
+                    transform: "scale(1)",
+                    transition: "all 0.8s ease 0.6s",
+                    filter: "blur(0px)",
+
+                });
+
+                setExperienceYearsAnimation({
+
+                    transform: "scale(1)",
+                    filter: "blur(0px)",
+                    transition: 'all 0.8s ease 0.7s'
+
+                });
+
+            } else {
+                
+                setHeadingScrollStyle({
+
+                    transform: "translateY(-500px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(50px)",
+
+                });
+
+                setCompanyNameAnimation({
+
+                    transform: "scale(0)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(20px)",
+
+                });
+
+                setExperienceDesignationAnime({
+
+                    transform: "scale(0)",
+                    filter: "blur(20px)",
+                    transition: "all 0.8s ease"
+
+                });
+
+                setExperienceYearsAnimation({
+
+                    transform: "scale(0)",
+                    filter: "blur(20px)",
+                    transition: "all 0.8s ease"
+
+                })
+
+            }
+
         }
 
     }
@@ -165,7 +237,7 @@ function Experience() {
 
         })
 
-    }, [])
+    }, []);
     
     return (
 
