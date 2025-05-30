@@ -145,6 +145,7 @@
     display: flex;
     padding: 0px 0px;
     overflow: hidden;
+    flex-wrap: wrap;
 
 }
 
@@ -185,12 +186,16 @@
 
 }
 
+/* MOBILE VIEW */
+
 @media only screen and (max-width: 600px){
 
     .experienceContainer{
 
         width: 100%;
-        height: 220vmin;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
 
     }
 
@@ -228,8 +233,9 @@
 
     .experienceContainer > .experienceContent{
 
-        height: 130vmin;
-        /* background-color: #e8b327; */
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
 
     }
 
@@ -267,5 +273,38 @@
 
     }
 
+    .experienceContentHeading >.experienceContentText:nth-child(2){
+
+        padding-right: 0px;
+
+    }
+
+    .experienceContent > .experienceSubContentText{
+
+       width: 100%;
+       overflow: visible;
+
+    }
+
+    .experienceSubContentText > .experienceparatext{
+
+        width: 100%;
+        padding-right: 5px;
+
+    }
+
+    .experienceparatext > p{
+
+        font-size: 4vmin;
+        line-height: 8vmin;
+        margin-bottom: 10px;
+
+    }
+
+    .experienceSubContentText > .experienceimage{
+
+        display: none;
+
+    }
 
 }

@@ -189,6 +189,14 @@ function Experience() {
 
                 });
 
+                setExperienceParaTextAnime({
+
+                    transform: "translateX(0px) skew(0deg)",
+                    transition: "all 0.8s ease 0.8s",
+
+                });
+
+
             } else {
                 
                 setHeadingScrollStyle({
@@ -220,6 +228,13 @@ function Experience() {
                     transform: "scale(0)",
                     filter: "blur(20px)",
                     transition: "all 0.8s ease"
+
+                });
+
+                setExperienceParaTextAnime({
+
+                    transition: "all 0.8s ease",
+                    transform: "translateX(-1000px) skew(-50deg)"
 
                 })
 
