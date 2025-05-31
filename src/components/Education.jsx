@@ -343,8 +343,17 @@ function Education() {
 
                     transform: "translateX(0px)",
                     transition: "all 0.8s ease 1s",
+                    filter: "blur(0px)",
 
-                })
+                });
+
+                setSecondContentStyle({
+
+                    transform: "translateX(0px)",
+                    transition: "all 0.8s ease 1.2s",
+                    filter: "blur(0px)",
+
+                });
 
             } else {
                 
@@ -387,9 +396,18 @@ function Education() {
                 setFirstContentStyle({
                     
                     transform: "translateX(-1000px)",
-                    transition: "all 0.8s ease"
+                    transition: "all 0.8s ease",
+                    filter: "blur(50px)",
 
-                })
+                });
+
+                setSecondContentStyle({
+
+                    transform: "translateX(1000px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(50px)",
+
+                });
 
             }
 
