@@ -47,3 +47,20 @@
     }
 
 }
+
+@media only screen and (max-width: 600px){
+
+    .carouselContainer{
+
+        display: flex;
+        align-items: center;
+
+    }
+
+    .carouselContainer:hover .subCarouselContainer{
+
+        animation-play-state: running;
+
+    }
+
+}
