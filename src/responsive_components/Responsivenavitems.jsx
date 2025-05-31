@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import ResponsiveNavStyle from '../../public/styles/Responsive Style/Responsivenav.module.css';
 import ResponsiveNavIcon from '../responsive_components/Responsivenavicon';
 
@@ -13,12 +13,42 @@ let img8 = '/images/responsive icon/online-certificate.png';
 let img9 = '/images/responsive icon/contact-mail.png';
 
 function Responsivenavitems() {
+
+    const [responsiveNavMenu, setResponsiveNavMenu] = useState({
+
+        transform: "translateY(500px)",
+        filter: "blur(20px)",
+
+    });
+
+    function handelResponsiveNavBar() {
+
+        setResponsiveNavMenu({
+
+            transform: "translateY(0px)",
+            filter: "blur(0px)",
+            transition: "all 0.8s ease 0.8s"
+
+        });
+        
+    }
+
+    useEffect(() => {
+
+        setTimeout(() => {
+
+            return handelResponsiveNavBar();
+
+        }, 1000)
+
+
+    }, []);
     
     return (
 
         <>
         
-            <div className={ResponsiveNavStyle.mobileHeader}>
+            <div className={ResponsiveNavStyle.mobileHeader} onLoad={handelResponsiveNavBar} style={responsiveNavMenu}>
 
                 <div className={ResponsiveNavStyle.background}>
                     

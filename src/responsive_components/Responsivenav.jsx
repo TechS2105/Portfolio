@@ -15,7 +15,7 @@ function Responsivenav() {
 
         <div style={responsiveNav}>
 
-            <ResponsiveNavItems />
+            <ResponsiveNavItems/>
 
         </div>
         
