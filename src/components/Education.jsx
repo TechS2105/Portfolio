@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import EducationStyle from '../../public/styles/Education.module.css';
 import Container from './Container';
+import ResponsiveEducationHeading from '../responsive_components/Responsiveeducationheading';
 
 function Education() {
 
@@ -316,6 +317,8 @@ function Education() {
     return (
 
         <Container>
+
+            <ResponsiveEducationHeading />
 
             <div className={EducationStyle.educationContainer}  id='education' onScroll={educationScrollingAnimation}>
 
