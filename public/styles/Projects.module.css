@@ -112,6 +112,8 @@
 
         font-size: 9vmin;
         line-height: 15vmin;
+        letter-spacing: 2vmin;
+        text-align: center;
 
     }
 
@@ -120,6 +122,14 @@
         border-right: 5px solid #fcfaea;
         border-bottom: 5px solid #fcfaea;
         box-shadow: 5px 5px 10px #292929;
+        font-size: 6vmin;
+        letter-spacing: 1.5vmin;
+        display: inline-flex;
+        width: 65vmin;
+        height: 13vmin;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
 
     }
 
@@ -127,6 +137,9 @@
 
         overflow: hidden;
         width: 100vmin;
+        display: flex;
+        align-items: center;
+        height: 170vmin;
 
     }
 
