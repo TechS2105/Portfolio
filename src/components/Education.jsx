@@ -306,7 +306,7 @@ function Education() {
                 setYearAnimation1({
 
                     transform: "translateY(0px)",
-                    transition: "all 0.8s ease 0.3s",
+                    transition: "all 0.8s ease 0.6s",
                     filter: "blur(0px)",
                     zIndex: "2",
 
@@ -315,7 +315,7 @@ function Education() {
                 setYearAnimation2({
 
                     transform: "translateY(0px)",
-                    transition: "all 0.8s ease 0.4s",
+                    transition: "all 0.8s ease 0.5s",
                     filter: "blur(0px)",
                     zIndex: "2",
 
@@ -324,7 +324,7 @@ function Education() {
                 setYearAnimation3({
 
                     transform: "translateY(0px)",
-                    transition: "all 0.8s ease 0.5s",
+                    transition: "all 0.8s ease 0.4s",
                     filter: "blur(0px)",
                     zIndex: "2"
 
@@ -333,7 +333,7 @@ function Education() {
                 setYearAnimation4({
 
                     transform: "translateY(0px)",
-                    transition: "all 0.8s ease 0.6s",
+                    transition: "all 0.8s ease 0.3s",
                     filter: "blur(0px)",
                     zIndex: "2"
 
