@@ -16,7 +16,7 @@ function Responsivenavitems() {
 
     const [responsiveNavMenu, setResponsiveNavMenu] = useState({
 
-        transform: "translateY(500px)",
+        transform: "translateY(100px)",
         filter: "blur(20px)",
 
     });
@@ -27,7 +27,7 @@ function Responsivenavitems() {
 
             transform: "translateY(0px)",
             filter: "blur(0px)",
-            transition: "all 0.8s ease 0.8s"
+            transition: "all 0.8s ease 1.5s"
 
         });
         
