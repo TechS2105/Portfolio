@@ -508,6 +508,31 @@
 
     }
 
+    .educationContent4 > .educationContentBox4{
+
+        width: 50vmin;
+        right: -50vmin;
+        top: -35vmin;
+
+    }
+
+    .educationContentBox4 > h3{
+
+        font-size: 5vmin;
+        letter-spacing: 2px;
+        line-height: 6vmin;
+
+    }
+
+    .educationContentBox4 > p{
+
+        width: 40vmin;
+        font-size: 4vmin;
+        line-height: 4.5vmin;
+        margin-top: 2vmin;
+
+    }
+
     .educationContainer > .subEducationContainer2{
 
         display: none;

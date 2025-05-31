@@ -363,6 +363,14 @@ function Education() {
 
                 });
 
+                setFourthContentStyle({
+
+                    transform: "translateX(0px)",
+                    filter: "blur(0px)",
+                    transition: "all 0.8s ease 1.4s",
+
+                });
+
             } else {
                 
                 setYearAnimation1({
@@ -420,6 +428,14 @@ function Education() {
                 setThirdContentStyle({
 
                     transform: "translateX(-1000px)",
+                    filter: "blur(50px)",
+                    transition: "all 0.8s ease",
+
+                });
+
+                setFourthContentStyle({
+
+                    transform: "translateX(1000px)",
                     filter: "blur(50px)",
                     transition: "all 0.8s ease",
 
