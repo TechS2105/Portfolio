@@ -371,6 +371,89 @@
 
     }
 
+    .subEducationContainer1 > .educationContent::after{
+
+       left: 42vmin;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       padding: 0px;
+       border-radius: 50%;
+       font-size: 4vmin;
+       width: 60px;
+       height: 60px;
+
+    }
+
+    .educationContent > .educationContentBox{
+
+        width: 50vmin;
+        left: -18vmin;
+        top: 2vmin;
+
+    }
+
+    .educationContentBox > h3{
+
+        font-size: 5vmin;
+        letter-spacing: 0px;
+        line-height: 6vmin;
+
+    }
+
+    .educationContentBox > p{
+
+        font-size: 2.9vmin;
+        letter-spacing: 0px;
+        width: 50vmin;
+        /* background-color: #292929; */
+        line-height: 4vmin;
+        padding-left: 2px;
+
+    }
+
+    .subEducationContainer1 > .educationContent2::after{
+
+        left: 42vmin;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 4vmin;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .subEducationContainer1 > .educationContent3::after{
+
+        left: 42vmin;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 4vmin;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .subEducationContainer1 > .educationContent4::after{
+
+        left: 42vmin;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 4vmin;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
     .educationContainer > .subEducationContainer2{
 
         display: none;

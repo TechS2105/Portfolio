@@ -301,14 +301,93 @@ function Education() {
 
         } else if (window.innerWidth < 600) {
             
-            if (window.scrollY > 2600) {
+            if (window.scrollY > 2500) {
                 
                 setYearAnimation1({
 
                     transform: "translateY(0px)",
-                    transition: "all 0.8s ease",
+                    transition: "all 0.8s ease 0.3s",
                     filter: "blur(0px)",
                     zIndex: "2",
+
+                });
+
+                setYearAnimation2({
+
+                    transform: "translateY(0px)",
+                    transition: "all 0.8s ease 0.4s",
+                    filter: "blur(0px)",
+                    zIndex: "2",
+
+                });
+
+                setYearAnimation3({
+
+                    transform: "translateY(0px)",
+                    transition: "all 0.8s ease 0.5s",
+                    filter: "blur(0px)",
+                    zIndex: "2"
+
+                });
+
+                setYearAnimation4({
+
+                    transform: "translateY(0px)",
+                    transition: "all 0.8s ease 0.6s",
+                    filter: "blur(0px)",
+                    zIndex: "2"
+
+                });
+
+                setFirstContentStyle({
+
+                    transform: "translateX(0px)",
+                    transition: "all 0.8s ease 1s",
+
+                })
+
+            } else {
+                
+                setYearAnimation1({
+
+                    transform: "translateY(-500px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(20px)",
+                    zIndex: "2",
+
+                });
+
+                setYearAnimation2({
+
+                    transform: "translateY(-1000px)",
+                    transition: 'all 0.8s ease',
+                    filter: "blur(20px)",
+                    zIndex: "2",
+
+                });
+
+                setYearAnimation3({
+
+                    transform: "translateY(-1500px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(20px)",
+                    zIndex: "2",
+
+                });
+
+                setYearAnimation4({
+
+                    transform: "translateY(-2000px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(20px)",
+                    zIndex: "2",
+
+                });
+
+                setFirstContentStyle({
+                    
+                    transform: "translateX(-1000px)",
+                    transition: "all 0.8s ease"
 
                 })
 
