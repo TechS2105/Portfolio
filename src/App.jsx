@@ -9,7 +9,7 @@ import About from './components/About';
 // import Skills from './components/Skills';
 import Experience from './components/Experience';
 // import Services from './components/Services';
-// import Projects from './components/Projects';
+import Projects from './components/Projects';
 // import Contact from './components/Contact';
 // import Certifications from './components/Certifications';
 // import Footer from './components/Footer';
@@ -27,7 +27,7 @@ function App() {
       <About />
       <Experience />
       {/* <Education /> */}
-      {/* <Projects /> */}
+      <Projects />
       {/* <Skills /> */}
       {/* <Services /> */}
       {/* <Certifications /> */}

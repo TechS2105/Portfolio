@@ -62,6 +62,46 @@ function Projects() {
 
             }
 
+        } else if (window.innerWidth < 600) {
+            
+            if (window.scrollY > 2500) {
+                
+                setPortfolioHeadingAnime({
+
+                    transform: "translateY(0px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(0px)"
+
+                });
+
+                setProjectShowCaseAnimation({
+
+                    transform: "translateY(0px) scale(1)",
+                    filter: "blur(0px)",
+                    transition: "all 0.8s ease 0.5s",
+
+                })
+
+            } else {
+                
+                setPortfolioHeadingAnime({
+
+                    transform: "translateY(-500px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(20px)",
+
+                });
+
+                setProjectShowCaseAnimation({
+
+                    transform: "translateY(1000px) scale(0)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(50px)",
+
+                });
+
+            }
+
         }
 
     }

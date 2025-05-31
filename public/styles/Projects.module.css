@@ -82,12 +82,52 @@
 
 }
 
-.projectIframeCustomStyle a > img{
+/* .projectIframeCustomStyle a > img{
 
     width: 100%;
     height: 200vh;
     object-fit: contain;
     object-position: top;
 
-}
+}  */
 
+
+@media only screen and (max-width: 600px){
+
+    .projectContainer{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .projectContainer > .projectContainerSection > {
+
+        width: 100%;
+
+    }
+
+    .projectContainerSection > .projectHeading{
+
+        font-size: 8vmin;
+        line-height: 15vmin;
+
+    }
+
+    .projectHeading > .projectHeadingSpan{
+
+        border-right: 5px solid #fcfaea;
+        border-bottom: 5px solid #fcfaea;
+        box-shadow: 5px 5px 10px #292929;
+
+    }
+
+    .projectContainer > .projectShowCaseContainer{
+
+        overflow: hidden;
+        width: 100vmin;
+
+    }
+
+}
