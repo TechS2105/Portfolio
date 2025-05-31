@@ -82,7 +82,7 @@ function Education() {
                     transition: "all 0.8s ease ",
                     filter: "blur(50px)"
 
-                })
+                });
                 
             }
 
@@ -144,7 +144,7 @@ function Education() {
         transform: "translateX(1000px)",
         filter: "blur(50px)",
 
-    })
+    });
 
     function subEducationScrollAnimation() {
         
@@ -299,6 +299,60 @@ function Education() {
 
             }
 
+        } else if (window.innerWidth < 600) {
+            
+            if (window.scrollY > 2600) {
+                
+                setYearAnimation1({
+
+                    transform: "translateY(0px)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(0px)",
+                    zIndex: "2",
+
+                })
+
+            }
+
+        }
+
+    }
+
+    // For mobile view animation
+
+    const [handelEducationHeadingAnime, setHandelEducationHeadingAnime] = useState({
+
+        transform: "translateY(-200px)",
+        filter: "blur(20px)"
+
+    })
+
+    const handelScrollResponsiveEducationSection = () => {
+
+        if (window.innerWidth < 600) {
+            
+            if (window.scrollY > 2300) {
+                
+                setHandelEducationHeadingAnime({
+
+                    transform: "translateY(0px)",
+                    filter: "blur(0px)",
+                    transition: "all 0.8s ease",
+
+                });
+
+            } else {
+                
+                setHandelEducationHeadingAnime({
+
+                    transform: 'translateY(-200px)',
+                    filter: "blur(20px)",
+                    transition: "all 0.8s ease", 
+
+                });
+
+            }
+
         }
 
     }
@@ -309,6 +363,7 @@ function Education() {
 
             window.addEventListener("scroll", educationScrollingAnimation);
             window.addEventListener("scroll", subEducationScrollAnimation);
+            window.addEventListener("scroll", handelScrollResponsiveEducationSection);
 
         })
 
@@ -318,9 +373,14 @@ function Education() {
 
         <Container>
 
-            <ResponsiveEducationHeading />
-
-            <div className={EducationStyle.educationContainer}  id='education' onScroll={educationScrollingAnimation}>
+            <div className={EducationStyle.educationContainer} id='education' onScroll={educationScrollingAnimation}>
+                
+                <ResponsiveEducationHeading
+                
+                    onScroll={handelScrollResponsiveEducationSection}
+                    state = {handelEducationHeadingAnime}
+                    
+                />
 
                 <div className={EducationStyle.subEducationContainer1} onScroll={subEducationScrollAnimation}>
 
