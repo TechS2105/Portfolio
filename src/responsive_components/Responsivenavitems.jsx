@@ -27,7 +27,7 @@ function Responsivenavitems() {
 
             transform: "translateY(0px)",
             filter: "blur(0px)",
-            transition: "all 0.8s ease 1.5s"
+            transition: "all 0.8s ease 1.4s"
 
         });
         
