@@ -669,4 +669,302 @@
 
     }
 
+    .skillSubContainer2{
+
+        width: 100%;
+        height: 100%;
+
+    }    
+
+    .skillSubContainer2 > .skillSection{
+
+        padding-left: 5vmin;
+        display: flex;
+        align-items: center;
+        gap: 4vmin;
+        justify-content: left;
+        padding-top: 5vmin;
+
+    }
+
+    .skillSection > .frontend {
+
+        width: 100%;
+
+    }
+
+    .frontend > h3{
+
+        font-size: 4vmin;
+
+    }
+
+    .frontend > .unorderlist {
+
+        height: 12vmin;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .frontend > .unorderlist ul{
+
+        padding-left: 2vmin;
+        gap: 2.5vmin;
+        font-size: 1vmin;
+        letter-spacing: 0px;
+
+    }
+
+    .frontend > .codeLogo{
+
+        width: 90vmin;
+        margin-left: 2vmin;
+
+    }
+
+    .frontend .codeLogo ul li > svg{
+
+        font-size: 5vmin;
+
+    }
+
+    .skillSection > .backend {
+
+        width: 100%;
+
+    }
+
+    .backend > h3{
+
+        font-size: 4vmin;
+
+    }
+
+    .backend > .unorderlist{
+
+        height: 12vmin;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .backend > .unorderlist ul{
+
+        padding-left: 2vmin;
+        gap: 2.5vmin;
+
+    }
+
+    .backend .unorderlist ul > li{
+
+        font-size: 3.5vmin;
+        letter-spacing: 0px;
+
+    }
+
+    .backend > .codeLogo{
+
+        margin-left: 2vmin;
+
+    }
+
+    .backend .codeLogo ul li > svg{
+
+        font-size: 5vmin;
+
+    }
+
+    .skillSection > .database{
+
+        width: 100%;
+
+    }
+
+    .database > h3{
+
+        font-size: 4vmin;
+
+    }
+
+    .database > .unorderlist{
+
+        height: 12vmin;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .database .unorderlist > ul{
+
+        padding-left: 2vmin;
+        gap: 2.5vmin;
+
+    }
+
+    .database .unorderlist ul > li{
+
+        font-size: 3.5vmin;
+        letter-spacing: 0px;
+
+    }
+
+    .database > .codeLogo{
+
+        margin-left: 2vmin;
+
+    }
+
+    .database .codeLogo ul li > svg{
+
+        font-size: 5vmin;
+
+    }
+
+    .skillSection > .versionControl{
+
+        width: 100%;
+
+    }
+
+    .versionControl > h3{
+
+        font-size: 4vmin;
+
+    }
+
+    .versionControl > .unorderlist{
+
+        height: 12vmin;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .versionControl > .unorderlist ul{
+
+        padding-left: 2vmin;
+        gap: 2.5vmin;
+
+    }
+
+    .versionControl .unorderlist ul > li{
+
+        font-size: 3.5vmin;
+        letter-spacing: 0px
+
+    }
+
+    .versionControl > .codeLogo{
+
+        margin-left: 2vmin;
+        width: 90vmin;
+
+    }
+
+    .versionControl .codeLogo ul li > svg{
+
+        font-size: 5vmin;
+
+    }
+
+    .skillSection > .tools {
+
+        width: 100%;
+
+    }
+
+    .tools > h3{
+
+        font-size: 4vmin;
+
+    }
+
+    .tools > .unorderlist{
+
+        height: 12vmin;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .tools > .unorderlist ul{
+
+        padding-left: 2vmin;
+        gap: 2.5vmin;
+
+    }
+
+    .tools .unorderlist ul > li{
+
+        font-size: 3.1vmin;
+        letter-spacing: 0px;
+
+    }
+
+    .tools > .codeLogo{
+
+        margin-left: 2vmin;
+        width: 70vmin;
+
+    }
+
+    .tools .codeLogo ul li > svg{
+
+        font-size: 5vmin;
+
+    }
+
+    .skillSection > .aiTools{
+
+        width: 100%;
+
+    }
+
+    .aiTools > h3{
+
+        font-size: 4vmin;
+
+    }
+
+    .aiTools > .unorderlist{
+
+        height: 12vmin;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .aiTools .unorderlist > ul{
+
+        padding-left: 2vmin;
+
+    }
+
+    .aiTools .unorderlist ul > li{
+
+        letter-spacing: 0px;
+        font-size: 3vmin;
+
+    }
+
+    .aiTools > .codeLogo {
+
+        margin-left: 2vmin;
+
+    }
+
+    .aiTools .codeLogo ul li > svg{
+
+        font-size: 5vmin;
+
+    }
+
+    .aiTools .codeLogo ul li > img{
+
+        width: 5vmin;
+        height: 5vmin;
+
+    }
+
 }

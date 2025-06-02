@@ -179,6 +179,62 @@ function Skills() {
 
             }
 
+        } else if (window.innerWidth < 600) {
+            
+            if (window.scrollY > 3800) {
+                
+                setFrontEnd({
+
+                    transform: "translateX(0px)",
+                    transition: "all 0.8s ease 0.5s",
+                    filter: "blur(0px)"
+
+                });
+
+                setSkillName({
+
+                    transform: 'translateY(0px)',
+                    filter: "blur(0px)",
+                    transition: "all 0.8s ease 0.6s",
+
+                });
+
+                setSkillCodeLogo({
+
+                    transform: "scale(1)",
+                    transition: 'all 0.8s ease 0.7s',
+                    filter: "blur(0px)",
+
+                });
+
+            } else {
+                
+                setFrontEnd({
+
+                    transform: 'translateX(-500px)',
+                    transition: 'all 0.8s ease',
+                    filter: "blur(20px)",
+
+                });
+
+                setSkillName({
+
+                    transform: "translateY(-100px)",
+                    filter: "blur(20px)",
+                    transition: "all 0.8s ease",
+
+                });
+
+                setSkillCodeLogo({
+
+                    transform: "scale(0)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(20px)",
+
+                });
+
+            }
+
         }
 
     }
