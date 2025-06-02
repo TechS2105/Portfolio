@@ -8,7 +8,7 @@ import About from './components/About';
 import Education from './components/Education';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
-// import Services from './components/Services';
+import Services from './components/Services';
 import Projects from './components/Projects';
 // import Contact from './components/Contact';
 // import Certifications from './components/Certifications';
@@ -29,7 +29,7 @@ function App() {
       <Education />
       <Projects />
       <Skills />
-      {/* <Services /> */}
+      <Services />
       {/* <Certifications /> */}
       {/* <Contact /> */}
       {/* <Footer /> */}

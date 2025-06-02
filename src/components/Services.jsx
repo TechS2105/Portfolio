@@ -61,6 +61,46 @@ function Services() {
 
             }
 
+        }else if(window.innerWidth < 600){
+
+            if (window.scrollY > 4600) {
+                
+                setServiceHeadingAnime({
+
+                    transform: "translateY(0px)",
+                    filter: "blur(0px)",
+                    transition: "all 0.8s ease",
+
+                });
+
+                setSecondSubServiceContainerAnime({
+
+                    transform: 'translateY(0px) scale(1)',
+                    filter: "blur(0px)",
+                    transition: "all 0.8s ease 0.5s"
+
+                });
+
+            } else {
+                
+                setServiceHeadingAnime({
+
+                    transform: "translateY(-500px)",
+                    filter: 'blur(20px)',
+                    transition: "all 0.8s ease",
+
+                });
+
+                setSecondSubServiceContainerAnime({
+
+                    transform: "translateY(1000px) scale(0)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(20px)",
+
+                });
+
+            }
+
         }
 
     }
