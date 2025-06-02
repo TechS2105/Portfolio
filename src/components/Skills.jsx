@@ -25,6 +25,7 @@ import { SiPostman } from "react-icons/si";
 import { FiChrome } from "react-icons/fi";
 import { FaWordpressSimple } from "react-icons/fa6";
 import { SiGithubcopilot } from "react-icons/si";
+import ResponsiveSkillHeader from '../responsive_components/Responsiveskillheader';
 
 let logoimage = '/images/icons8-chatgpt-50.png';
 
@@ -198,6 +199,8 @@ function Skills() {
 
             <div id="skills" className={SkillStyle.skillContainer} onScroll={handelSkillScroll}>
 
+                <ResponsiveSkillHeader />
+                
                 <div className={SkillStyle.skillSubContainer1}>
 
                     <h2 className={SkillStyle.skillsHeading}>

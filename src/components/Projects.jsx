@@ -64,7 +64,7 @@ function Projects() {
 
         } else if (window.innerWidth < 600) {
             
-            if (window.scrollY > 3300) {
+            if (window.scrollY > 3000) {
                 
                 setPortfolioHeadingAnime({
 

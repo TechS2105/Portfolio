@@ -13,9 +13,9 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        background-image: url("https://www.transparenttextures.com/patterns/subtle-zebra-3d.png");
+        /* background-image: url("https://www.transparenttextures.com/patterns/subtle-zebra-3d.png"); */
         background-size: contain;
-        background-color: #efcb55;
+        /* background-color: #efcb55; */
    
 
     }
@@ -38,27 +38,29 @@
         font-size: 12vmin;
         letter-spacing: 1.5vmin;
         line-height: 15vmin;
-        text-shadow: 2px 2px 5px #292929;
-        color: #fcfaea;
+        /* text-shadow: 2px 2px 5px #292929; */
+        color: #292929;
 
     }
 
     .responsiveHeadingName h2 > .responsiveEducationHeadingSpan{
 
-        background-color: #fcfaea;
+        background-color: #e8b327;
         height: 15vmin;
-        width: 76vmin;
+        width: 65vmin;
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        font-size: 6vmin;
-        color: #292929;
+        font-size: 4.9vmin;
+        color: #fcfaea;
         text-shadow: 1px 1px 1px #fefefe;
         border-top-right-radius: 50px;
         border-bottom-left-radius: 50px;
         box-shadow: 5px 5px 5px #292929;
-        border-right: 5px solid #292929;
-        border-bottom: 5px solid #292929;
+        border-right: 5px solid #fcfaea;
+        border-bottom: 5px solid #fcfaea;
+        text-shadow: 2px 2px 5px #292929;
+        letter-spacing: 1.5vmin;
 
     }
 
