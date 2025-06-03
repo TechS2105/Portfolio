@@ -451,7 +451,7 @@ function Education() {
 
     const [handelEducationHeadingAnime, setHandelEducationHeadingAnime] = useState({
 
-        transform: "translateY(-200px)",
+        transform: "translateY(-500px)",
         filter: "blur(20px)"
 
     })
@@ -474,7 +474,7 @@ function Education() {
                 
                 setHandelEducationHeadingAnime({
 
-                    transform: 'translateY(-200px)',
+                    transform: 'translateY(-500px)',
                     filter: "blur(20px)",
                     transition: "all 0.8s ease", 
 
