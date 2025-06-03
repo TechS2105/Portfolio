@@ -8,3 +8,14 @@
     z-index: 999999;
 
 }
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 600px){
+
+    .progressbarContainer{
+
+        display: none;
+
+    }
+
+}
