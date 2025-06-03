@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import NavbarStyle from '../../public/styles/Navbar.module.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import ProgressBarContainer from '../components/Progressbarcontainer';
 
 function Navitem({ logo }) {
 
@@ -8,6 +9,13 @@ function Navitem({ logo }) {
 
         transform: "translateX(-700px)",
         filter: "blur(50px)",
+
+    });
+
+    const [mobileLogoStyle, setMobileLogoStyle] = useState({
+
+        transform: "scale(0)",
+        filter: "blur(20px)",
 
     });
 
@@ -71,106 +79,140 @@ function Navitem({ logo }) {
 
     function handelLoadAnimation() {
 
-            useEffect(() => {
+        if (window.innerWidth > 600) {
 
-                setTimeout(() => {
+            setLogoStyle({
+                transform: "translateX(0px)",
+                transition: "all 0.8s ease",
+                filter: "blur(0px)",
+                color: "#e8b327",
+            });
 
-                    setLogoStyle({
-                        transform: "translateX(0px)",
-                        transition: "all 0.8s ease",
-                        filter: "blur(0px)",
-                        color: "#e8b327",
-                    });
+            setList1({
 
-                    setList1({
+                transform: "scale(1)",
+                transition: "all 0.5s ease 0.2s",
+                filter: "blur(0px)"
 
-                        transform: "scale(1)",
-                        transition: "all 0.5s ease 0.2s",
-                        filter: "blur(0px)"
+            });
 
-                    });
+            setList2({
 
-                    setList2({
+                transform: "scale(1)",
+                transition: "all 0.5s ease 0.4s",
+                filter: "blur(0px)",
 
-                        transform: "scale(1)",
-                        transition: "all 0.5s ease 0.4s",
-                        filter: "blur(0px)",
+            });
 
-                    });
+            setList3({
 
-                    setList3({
+                transform: "scale(1)",
+                transition: "all 0.5s ease 0.6s",
+                filter: "blur(0px)",
 
-                        transform: "scale(1)",
-                        transition: "all 0.5s ease 0.6s",
-                        filter: "blur(0px)",
+            });
 
-                    });
+            setList4({
 
-                    setList4({
+                transform: "scale(1)",
+                transition: "all 0.5s ease 0.8s",
+                filter: "blur(0px)"
 
-                        transform: "scale(1)",
-                        transition: "all 0.5s ease 0.8s",
-                        filter: "blur(0px)"
+            });
 
-                    });
+            setList5({
 
-                    setList5({
+                transform: "scale(1)",
+                transition: "all 0.5s ease 1s",
+                filter: "blur(0px)"
 
-                        transform: "scale(1)",
-                        transition: "all 0.5s ease 1s",
-                        filter: "blur(0px)"
+            });
 
-                    });
+            setList6({
 
-                    setList6({
+                transform: "scale(1)",
+                transition: 'all 0.5s ease 1.2s',
+                filter: "blur(0px)",
 
-                        transform: "scale(1)",
-                        transition: 'all 0.5s ease 1.2s',
-                        filter: "blur(0px)",
+            });
 
-                    });
+            setList7({
 
-                    setList7({
+                transform: "scale(1)",
+                transition: "all 0.5s ease 1.4s",
+                filter: "blur(0px)",
 
-                        transform: "scale(1)",
-                        transition: "all 0.5s ease 1.4s",
-                        filter: "blur(0px)",
+            });
 
-                    })
+            setList8({
 
-                    setList8({
+                transform: "scale(1)",
+                transition: "all 0.5s ease 1.6s",
+                filter: "blur(0px)",
 
-                        transform: "scale(1)",
-                        transition: "all 0.5s ease 1.6s",
-                        filter: "blur(0px)",
+            });
 
-                    });
+            setList9({
 
-                    setList9({
+                transform: "scale(1)",
+                transition: "all 0.5s ease 1.7s",
+                filter: "blur(0px)",
 
-                        transform: "scale(1)",
-                        transition: "all 0.5s ease 1.7s",
-                        filter: "blur(0px)",
+            });
+            
+        } else if (window.innerWidth < 600) {
+            
+            setMobileLogoStyle({
 
-                    })
+                transform: "scale(1)",
+                filter: "blur(0px)",
+                transition: "all 0.8s ease",
 
-                }, 1800)
+            });
 
-            }, []);
+        }
 
    }
+
+    function handelMobileHeaderLogo() {
+        
+        setMobileLogoStyle({
+
+            transform: 'scale(1)',
+            transition: 'all 0.5s ease',
+            filter: "blur(0px)",
+
+        });
+
+    }
+    
+    useEffect(() => {
+
+        setTimeout(() => {
+
+            return handelLoadAnimation();
+
+        }, 1800);
+
+        setTimeout(() => {
+
+            return handelMobileHeaderLogo();
+
+        })
+
+    }, []);
 
     return (
         
         <>
         
-            <header className={NavbarStyle.header} onLoad={handelLoadAnimation()}>
+            <header className={NavbarStyle.header} onLoad={handelLoadAnimation}>
 
                 <div className={NavbarStyle.container}>
 
                     <div className={NavbarStyle.logo}> 
 
-                        <h1 style={logoStyle}>
+                        <h1 style={logoStyle} id={NavbarStyle.desktoplogo}>
                             
                             <AnchorLink offset={100} href='#home' className={NavbarStyle.logoLinkStyle}>
                                 
@@ -205,6 +247,22 @@ function Navitem({ logo }) {
                     </div>
                     
                 </div>
+
+            </header>
+
+            <ProgressBarContainer />
+
+            <header className={NavbarStyle.mobileHeader} onLoad={handelMobileHeaderLogo}>
+
+                <h1 style={mobileLogoStyle} id={NavbarStyle.mobilelogo}>
+
+                    <AnchorLink offset={100} href='#home' className={NavbarStyle.mobileLogoLinkStyle}>
+
+                        {logo}
+
+                    </AnchorLink>
+
+                </h1>
 
             </header>
             
