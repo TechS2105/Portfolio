@@ -179,7 +179,7 @@ function Navitem({ logo }) {
         setMobileLogoStyle({
 
             transform: 'scale(1)',
-            transition: 'all 0.5s ease',
+            transition: 'all 0.8s ease',
             filter: "blur(0px)",
 
         });
@@ -198,7 +198,7 @@ function Navitem({ logo }) {
 
             return handelMobileHeaderLogo();
 
-        })
+        });
 
     }, []);
 

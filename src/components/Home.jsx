@@ -299,7 +299,7 @@ function Home() {
 
                             <a href="https://www.linkedin.com/in/sovan-sundar-dey-3b3a61238/" target="_blank"><FaLinkedinIn style={sociallink1}/></a>
                             <a href="https://github.com/TechS2105" target="_blank" style={sociallink2}><FaGithub /></a>
-                            <a href="#" style={sociallink3}><BiLogoGmail /></a>
+                            <a href="mailto:sovandey2105@gmail.com" style={sociallink3}><BiLogoGmail /></a>
 
                         </div>
 
