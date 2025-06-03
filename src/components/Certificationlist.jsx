@@ -21,8 +21,8 @@ function Certificationlist() {
 
                     <CertificateImages 
         
-                        image="/images/udemy 2.png"
-                        imagelink="/images/udemy 2.png"
+                        image="/images/certificate/UC-0c00eed7-698c-41fb-a66e-8374063b1196.jpg"
+                        imagelink="/files/UC-0c00eed7-698c-41fb-a66e-8374063b1196.pdf"
             
                     />
                     
@@ -39,8 +39,8 @@ function Certificationlist() {
 
                     <CertificateImages 
 
-                        image="/images/udemy 2.png"
-                        imagelink="/images/udemy 2.png"
+                        image="/images/certificate/UC-0c00eed7-698c-41fb-a66e-8374063b1196.jpg"
+                        imagelink="/files/UC-0c00eed7-698c-41fb-a66e-8374063b1196.pdf"
 
                     />
 
