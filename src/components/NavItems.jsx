@@ -198,7 +198,7 @@ function Navitem({ logo }) {
 
             return handelMobileHeaderLogo();
 
-        });
+        }, 500);
 
     }, []);
 
