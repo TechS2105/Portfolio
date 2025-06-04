@@ -33,13 +33,11 @@ function ProjectImage({ image, imagelink }) {
 
     return (
 
-
-            <div className={ProjectImageStyle.imageDiv} onMouseOver={handelMouseOver} onMouseOut={handelMouseOut}>
+        <div className={ProjectImageStyle.imageDiv} onMouseOver={handelMouseOver} onMouseOut={handelMouseOut}>
 
                 <a href={imagelink} target='_blank'><img src={image} alt={image} className={ProjectImageStyle.projectImages} style={scrollImageAnimation} /></a>
                 
-            </div>
-            
+        </div>
 
     );
 
