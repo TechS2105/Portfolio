@@ -85,3 +85,27 @@
     letter-spacing: 3px;
 
 }
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 600px){
+
+    .certificationContainerStyle{
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .certificationContainerStyle > .certificationSubContainer2{
+
+        display: none;
+
+    }
+
+    .certificationContainerStyle > .certificationSubContainer1{
+
+        width: 100%;
+
+    }
+
+}

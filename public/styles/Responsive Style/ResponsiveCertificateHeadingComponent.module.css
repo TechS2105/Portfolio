@@ -1,0 +1,42 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: certificateheadingfont;
+    src: url('../../fonts/gridstar-font/GridstarRegular-ovOax.otf');
+}
+
+.certificateComponent{
+
+    font-size: 10vmin;
+    text-align: center;
+    font-family: 'certificateheadingfont';
+    line-height: 13vmin;
+    letter-spacing: 2vmin;
+
+}
+
+.certificateComponent > .certificateComponentSpan{
+
+    font-size: 8vmin;
+    background-color: #efcb55;
+    width: 70vmin;
+    height: 13vmin;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.8vmin;
+    color: #fcfaea;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 5px 5px 5px #292929;
+    border-right: 5px solid #fcfaea;
+    border-bottom: 5px solid #fcfaea;
+    text-shadow: 2px 2px 2px #292929;
+
+}
+

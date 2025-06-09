@@ -1,0 +1,23 @@
+@media only screen and (min-width: 600px){
+
+    .certificateHeading{
+
+        display: none;
+
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .certificateHeading {
+
+        width: 100%;
+        height: 50vmin;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+}

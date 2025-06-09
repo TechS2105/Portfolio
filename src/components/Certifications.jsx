@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Container from './Container';
 import CertificationStyle from '../../public/styles/Certifications.module.css';
 import CertificationList from './Certificationlist';
+import ResponsiveCertificateHeading from '../responsive_components/Responsivecertificateheading';
 
 function Certifications() {
 
@@ -110,6 +111,8 @@ function Certifications() {
        <Container>
 
             <div className={CertificationStyle.certificationContainerStyle} id='certification' onScroll={handelCertificationScroll}>
+
+                <ResponsiveCertificateHeading />
 
                 <div className={CertificationStyle.certificationSubContainer1}>
 

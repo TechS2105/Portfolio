@@ -11,7 +11,7 @@ import Experience from './components/Experience';
 import Services from './components/Services';
 import Projects from './components/Projects';
 // import Contact from './components/Contact';
-// import Certifications from './components/Certifications';
+import Certifications from './components/Certifications';
 // import Footer from './components/Footer';
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
       <Projects />
       <Skills />
       <Services />
-      {/* <Certifications /> */}
+      <Certifications />
       {/* <Contact /> */}
       {/* <Footer /> */}
           
