@@ -127,8 +127,9 @@
     .footerContainer > .footerContent{
 
         background-color: #fcfaea;
-        width: 100%;
+        width: 50%;
         height: 20vmin;
+        border-radius: 50px;
 
     }
 
@@ -137,6 +138,7 @@
         font-size: 10vmin;
         letter-spacing: 2vmin;
         color: #efcb55;
+        padding: 0px;
 
     }
 
