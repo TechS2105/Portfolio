@@ -2,15 +2,15 @@ import React, {useState, useEffect} from 'react';
 import ResponsiveNavStyle from '../../public/styles/Responsive Style/Responsivenav.module.css';
 import ResponsiveNavIcon from '../responsive_components/Responsivenavicon';
 
-let img1 = '/images/responsive icon/home (1).png';
-let img2 = '/images/responsive icon/information.png';
-let img3 = '/images/responsive icon/quality.png';
-let img4 = '/images/responsive icon/graduate.png';
-let img5 = '/images/responsive icon/portfolio.png';
-let img6 = '/images/responsive icon/leadership-skills.png';
-let img7 = '/images/responsive icon/service.png';
-let img8 = '/images/responsive icon/online-certificate.png';
-let img9 = '/images/responsive icon/contact-mail.png';
+let img1 = '/images/responsive nav icon/home-smile-svgrepo-com.svg';
+let img2 = '/images/responsive nav icon/about-svgrepo-com.svg';
+let img3 = '/images/responsive nav icon/target-svgrepo-com.svg';
+let img4 = '/images/responsive nav icon/education-svgrepo-com.svg';
+let img5 = '/images/responsive nav icon/portfolio-svgrepo-com.svg';
+let img6 = '/images/responsive nav icon/programming-svgrepo-com (1).svg';
+let img7 = '/images/responsive nav icon/cloud-service-management-svgrepo-com.svg'
+let img8 = '/images/responsive nav icon/certificate-svgrepo-com (1).svg';
+let img9 = '/images/responsive nav icon/contact-phone-talking-svgrepo-com.svg';
 
 function Responsivenavitems() {
 
