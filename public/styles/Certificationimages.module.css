@@ -16,3 +16,13 @@
     border: 20px double #fcfaea;
 
 }
+
+@media only screen and (max-width: 600px){
+
+    .certificateImageStyle a > img{
+
+        border-radius: 0px;
+
+    }
+
+}

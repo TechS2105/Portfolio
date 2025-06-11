@@ -36,6 +36,30 @@ function Certificateimage(props) {
 
             }
 
+        } else if (window.innerWidth < 600) {
+            
+            if (window.scrollY > 5600) {
+                
+                setCertificateImageAnime({
+
+                    transform: "scale(1)",
+                    transition: "all 0.8s ease",
+                    filter: "blur(0px)",
+
+                });
+
+            } else {
+                
+                setCertificateImageAnime({
+
+                    transform: "scale(0)",
+                    transition: 'all 0.8s ease',
+                    filter: "blur(20px)",
+
+                });
+
+            }
+
         }
 
     }

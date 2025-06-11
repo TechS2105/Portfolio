@@ -8,7 +8,7 @@
 
 .certificationListContainer > .subCertificateList{
 
-    width: 600px;
+    width: 300px;
     animation: certificateAnimation 5s linear infinite;
 
 }
