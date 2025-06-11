@@ -33,14 +33,18 @@ function Responsivenavitems() {
         
     }
 
-    function handelNavOnScroll(e) {
+    let previousWindowPosition = window.pageYOffset;
+
+    const handelNavOnScroll = React.useCallback(() => {
+
+        const currentWindowPosition = window.pageYOffset;
         
-       if(e.deltaY > 0){
+       if(previousWindowPosition > currentWindowPosition){
 
            setResponsiveNavMenu({
                
-               transform: "translateY(100px)",
-               filter: "blur(20px)",
+               transform: "translateY(0px)",
+               filter: "blur(0px)",
                transition: 'all 0.8s ease'
                
            })
@@ -49,15 +53,17 @@ function Responsivenavitems() {
            
            setResponsiveNavMenu({
                
-               transform: "translateY(0px)",
-               filter: "blur(0px)",
+               transform: "translateY(100px)",
+               filter: "blur(20px)",
                transition: "all 0.8s ease",
                
            });
            
-       }
+        }
+        
+        previousWindowPosition = currentWindowPosition;
 
-    }
+    }, []);
 
     useEffect(() => {
 
@@ -67,16 +73,19 @@ function Responsivenavitems() {
 
         }, 1000);
 
-        window.addEventListener('wheel', handelNavOnScroll)
+        window.addEventListener('scroll', handelNavOnScroll);
 
+        return () => {
+            window.removeEventListener('scroll', handelNavOnScroll);
+        };
 
-    }, []);
+    }, [handelNavOnScroll]);
     
     return (
 
         <>
         
-            <div className={ResponsiveNavStyle.mobileHeader} onLoad={handelResponsiveNavBar} style={responsiveNavMenu} onScroll={handelNavOnScroll}>
+            <div className={ResponsiveNavStyle.mobileHeader} onLoad={handelResponsiveNavBar} style={responsiveNavMenu} onScroll={handelNavOnScroll} >
 
                 <div className={ResponsiveNavStyle.background}>
                     
