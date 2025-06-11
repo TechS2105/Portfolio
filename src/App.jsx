@@ -1,7 +1,7 @@
 import React from 'react';
 import '../public/styles/App.css';
 import Navbar from './components/Navbar';
-// import ResponsiveNav from './responsive_components/Responsivenav';
+import ResponsiveNav from './responsive_components/Responsivenav';
 import SiteLoader from './components/Siteloader';
 import Home from './components/Home';
 import About from './components/About';
@@ -10,9 +10,9 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Services from './components/Services';
 import Projects from './components/Projects';
-// import Contact from './components/Contact';
+import Contact from './components/Contact';
 import Certifications from './components/Certifications';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 function App() {
   
@@ -22,7 +22,7 @@ function App() {
       
       <SiteLoader />
       <Navbar />
-      {/* <ResponsiveNav /> */}
+      <ResponsiveNav />
       <Home />
       <About />
       <Experience />
@@ -31,8 +31,8 @@ function App() {
       <Skills />
       <Services />
       <Certifications />
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Contact />
+      <Footer />
           
     </>
 

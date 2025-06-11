@@ -33,13 +33,41 @@ function Responsivenavitems() {
         
     }
 
+    function handelNavOnScroll(e) {
+        
+       if(e.deltaY > 0){
+
+           setResponsiveNavMenu({
+               
+               transform: "translateY(100px)",
+               filter: "blur(20px)",
+               transition: 'all 0.8s ease'
+               
+           })
+           
+       } else {
+           
+           setResponsiveNavMenu({
+               
+               transform: "translateY(0px)",
+               filter: "blur(0px)",
+               transition: "all 0.8s ease",
+               
+           });
+           
+       }
+
+    }
+
     useEffect(() => {
 
         setTimeout(() => {
 
             return handelResponsiveNavBar();
 
-        }, 1000)
+        }, 1000);
+
+        window.addEventListener('wheel', handelNavOnScroll)
 
 
     }, []);
@@ -48,7 +76,7 @@ function Responsivenavitems() {
 
         <>
         
-            <div className={ResponsiveNavStyle.mobileHeader} onLoad={handelResponsiveNavBar} style={responsiveNavMenu}>
+            <div className={ResponsiveNavStyle.mobileHeader} onLoad={handelResponsiveNavBar} style={responsiveNavMenu} onScroll={handelNavOnScroll}>
 
                 <div className={ResponsiveNavStyle.background}>
                     
