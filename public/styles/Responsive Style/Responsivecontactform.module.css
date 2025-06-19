@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'responsivecontactfont';
+    src: url('../../fonts/lato/Lato-Medium.ttf');
+}
+
+:root{
+
+    --primary-color: #efcb55;
+    --secondary-color: #f5e293;
+    --third-color: #fcfaea;
+    --fourth-color: #292929;
+
+}
+
+.responsiveFormStyle{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4vmin;
+
+}
+
+.responsiveFormStyle > form{
+
+    background-color: #292929;
+    width: 88%;
+    height: 59%;
+    border-radius: 5vmin;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vmin;
+
+}
+
+.responsiveFormStyle > form label{
+
+    color: var(--primary-color);
+    font-family: 'responsivecontactfont';
+    font-size: 4vmin;
+    letter-spacing: 1.1vmin;
+
+}
+
+.responsiveFormStyle form > input{
+
+    width: 79vmin;
+    height: 8vmin;
+    padding-left: 10px;
+    font-family: 'responsivecontactfont';
+    border: none;
+    outline: none;
+
+}
+
+.responsiveFormStyle form > textarea{
+
+    padding-left: 10px;
+    padding-top: 5px;
+
+}
+
+.responsiveFormStyle form > button{
+
+    width: 40vmin;
+    height: 8vmin;
+    font-family: 'responsivecontactfont';
+    font-size: 4vmin;
+    letter-spacing: 0.5vmin;
+    background-color: var(--primary-color);
+    border: none;
+    outline: none;
+
+}
+
+.responsiveFormStyle form > .responsiveErrorsStyle{
+
+    color: var(--third-color);
+    font-family: 'responsivecontactfont';
+    font-size: 3.5vmin;
+
+}
+
+.responsiveFormStyle form > ::placeholder{
+
+    font-family: 'responsivecontactfont';
+    font-size: 4vmin;
+
+}

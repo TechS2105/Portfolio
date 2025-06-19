@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import Container from './Container';
 import ContactStyle from '../../public/styles/Contact.module.css';
+import { useForm } from 'react-hook-form';
+import ResponsiveMobileContactForm from '../responsive_components/Responsivemobilecontactform';
 
 function Contact() {
 
@@ -107,6 +109,30 @@ function Contact() {
 
             }
 
+        } else if (window.innerWidth < 600) {
+            
+            if (window.scrollY > 6400) {
+                
+                setContactHeadingAnime({
+
+                    transform: "translateY(0)",
+                    filter: "blur(0px)",
+                    transition: 'all 0.8s ease'
+
+                })
+
+            } else {
+                
+                setContactHeadingAnime({
+
+                    transform: "translateY(-500px)",
+                    filter: "blur(20px)",
+                    transition: "all 0.8s ease"
+
+                });
+
+            }
+
         }
 
     }
@@ -121,6 +147,29 @@ function Contact() {
 
     }, []);
 
+    // use react hook form
+    const {
+
+        register,
+        handleSubmit,
+        reset,
+        formState: { errors, isSubmitting }
+
+    } = useForm();
+
+    const onSubmit = async (data) => {
+
+        let r = await fetch("http://localhost:3000/api/send-mail", {
+          headers: { "Content-Type": "application/json; charset=utf-8" },
+          method: "POST",
+          body: JSON.stringify(data),
+        });
+        let res = await r.json();
+        console.log(data, res);
+        reset();
+
+    }
+
     return (
 
         <Container>
@@ -129,7 +178,14 @@ function Contact() {
                 
                 <div className={ContactStyle.contactHeading}>
 
-                    <h2 style={contactHeadingAnime}> Get In <span className={ContactStyle.spanContactHeading}> Touch</span></h2>
+                    <h2 style={contactHeadingAnime}> Contact <span className={ContactStyle.spanContactHeading}> With Me </span></h2>
+
+                </div>
+
+                {/** MOBILE VIEW CONTACT SECTION */}
+                <div className={ContactStyle.mobileContactFormSection}>
+
+                    <ResponsiveMobileContactForm />
 
                 </div>
 
@@ -149,22 +205,40 @@ function Contact() {
                     </div>
                     <div className={ContactStyle.contactForm} style={contactFormAnime}>  
 
-                        <form action="#">
+                        <form onSubmit={handleSubmit(onSubmit)}>
 
                             <label htmlFor='firstname'> First Name </label><br/><br/>
-                            <input type="text" id="firstname" placeholder='Enter Your First Name' required /><br/><br/>
+                            <input type="text" placeholder='Enter Your First Name' {...register("firstname", { required: { value: true, message: "Firstname is required" }, maxLength: {value: 10, message: "Maxlength is 10"} })} /><br />
+                            
+                            {errors.firstname && <div className={ContactStyle.errorMessageStyle}>{errors.firstname.message}</div>}
+
+                            <br />
                             
                             <label htmlFor="lastname"> Last Name </label><br /><br />
-                            <input type="text" id="lastname" placeholder='Enter Your Last Name' required /><br/><br/>
+                            <input type="text" placeholder='Enter Your Last Name' {...register("lastname", { required: { value: true, message: "Lastname is required" }, maxLength: { value: 10, message: "Maxlength is 10" } })} /><br />
+                            
+                            {errors.lastname && <div className={ContactStyle.errorMessageStyle}>{errors.lastname.message}</div>}
+
+                            <br />
                             
                             <label htmlFor="email"> Email </label><br /><br />
-                            <input type="email" id="email" placeholder='Enter Your Email' required /><br /><br/>
+                            <input type="email" placeholder='Enter Your Email' {...register("email", { required: { value: true, message: "Email is required" }, maxlength: { value: 50, message: "Maxlength is 50" } })} /><br />
+                            
+                            {errors.email && <div className={ContactStyle.errorMessageStyle}>{errors.email.message}</div>}
+
+                            <br />
                             
                             <label htmlFor="textarea"> Message </label><br/><br/>
-                            <textarea id="textarea" cols={53} rows={8} required placeholder='Type Your Message...'></textarea><br/><br/>
+                            <textarea id="textarea" cols={53} rows={8} placeholder='Type Your Message...' {...register("textarea", { required: { value: true, message: "Message is required" } })}></textarea><br />
+                            
+                            {errors.textarea && <div className={ContactStyle.errorMessageStyle}>{errors.textarea.message}</div>}
 
-                            <button type='submit'> Submit </button>
+                            <br />
 
+                            {isSubmitting && <div className={ContactStyle.submittingstyle}> Form is Submitting... </div>}
+
+                            <button type='submit' disabled={isSubmitting}> Submit </button>
+                                                                               
                         </form>
 
                     </div>

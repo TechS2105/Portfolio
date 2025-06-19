@@ -13,7 +13,7 @@ function Footer() {
 
             <div className={FooterStyle.footerCopyright}>
 
-                <p> Copyright @{date} </p>
+                <p> Copyright &copy; {date} </p>
 
             </div>
 
