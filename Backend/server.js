@@ -27,7 +27,7 @@ const contactMail = nodemailer.createTransport({
     secure: true,
     logger: false,
     debug: true,
-    secureConnection: false,
+    secureConnection: true,
     auth: {
 
         user: "sovandey2105@gmail.com",
@@ -64,7 +64,7 @@ const mobileContactMail = nodemailer.createTransport({
     secure: true,
     logger: false,
     debug: true,
-    secureConnection: false,
+    secureConnection: true,
     auth: {
         
         user: "sovandey2105@gmail.com",
