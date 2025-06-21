@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "proxy": "http://localhost:3000/api/send-mail, http://localhost:3000/api/mobile/send-mail",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
