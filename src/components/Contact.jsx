@@ -111,7 +111,7 @@ function Contact() {
 
         } else if (window.innerWidth < 600) {
             
-            if (window.scrollY > 6400) {
+            if (window.scrollY > 6600) {
                 
                 setContactHeadingAnime({
 
@@ -176,7 +176,7 @@ function Contact() {
 
     function handelOnScrollMobileForm(){
 
-        if (window.scrollY > 6500) {
+        if (window.scrollY > 6600) {
             
             setHandelMobileFormAnime({
 
