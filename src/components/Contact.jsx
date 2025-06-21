@@ -147,6 +147,70 @@ function Contact() {
 
     }, []);
 
+    // For Mobile View 
+    const [handelMobileFormAnime, setHandelMobileFormAnime] = useState({
+
+        transform: "scaleX(0)",
+
+    });
+
+    const [secondState, setSecondState] = useState({
+
+        transform: "translateX(-500px)",
+        filter: "blur(20px)"
+
+    });
+
+    function handelOnScrollMobileForm(){
+
+        if (window.scrollY > 6500) {
+            
+            setHandelMobileFormAnime({
+
+                transform: "scaleX(1)",
+                transition: "all 0.8s ease",
+
+            });
+
+            setSecondState({
+
+                transform: "translateX(0px)",
+                filter: "blur(0px)",
+                transition: `all 0.8s ease calc(0.8s / 2s)`
+
+            });
+
+        } else {
+            
+            setHandelMobileFormAnime({
+
+                transform: "scaleX(0)",
+                transition: "all 0.8s ease",
+
+            });
+
+            setSecondState({
+
+                transform: "translateX(-500px)",
+                filter: "blur(20px)",
+                transition: "all 0.8s ease calc(0.8s / 2s)"
+
+            });
+
+        }
+
+    }
+
+    useEffect(() => {
+
+        setTimeout(() => {
+
+            document.addEventListener("scroll", handelOnScrollMobileForm)
+
+        })
+
+    }, [])
+
     // use react hook form
     const {
 
@@ -185,7 +249,13 @@ function Contact() {
                 {/** MOBILE VIEW CONTACT SECTION */}
                 <div className={ContactStyle.mobileContactFormSection}>
 
-                    <ResponsiveMobileContactForm />
+                    <ResponsiveMobileContactForm
+                    
+                        onScroll={handelOnScrollMobileForm}
+                        state={handelMobileFormAnime}
+                        secondState={secondState}
+                        
+                    />
 
                 </div>
 

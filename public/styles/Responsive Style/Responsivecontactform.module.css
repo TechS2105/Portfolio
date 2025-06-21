@@ -62,6 +62,10 @@
 
     padding-left: 10px;
     padding-top: 5px;
+    width: 80vmin;
+    height: 20vmin;
+    border: none;
+    outline: none;
 
 }
 

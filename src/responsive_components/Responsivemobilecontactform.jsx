@@ -2,7 +2,7 @@ import React from 'react';
 import ResponsiveContactFormStyle from '../../public/styles/Responsive Style/Responsivecontactform.module.css';
 import { useForm } from 'react-hook-form';
 
-function ResponsiveMobileContactFrom() {
+function ResponsiveMobileContactFrom({handelOnScrollMobileForm, state, secondState}) {
 
     const {
 
@@ -29,27 +29,25 @@ function ResponsiveMobileContactFrom() {
     };
     
     return (
-      <div className={ResponsiveContactFormStyle.responsiveFormStyle}>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <label htmlFor="firstname"> First Name </label><br />
+      <div className={ResponsiveContactFormStyle.responsiveFormStyle} onScroll={handelOnScrollMobileForm}>
+        <form onSubmit={handleSubmit(onSubmit)} style={state}>
+          <label htmlFor="firstname" style={secondState}> First Name </label><br />
                 <input type="text" placeholder="Enter your first name" {...register("firstname", {required: {value: true, message: "Firstname field is required"}})} />
                 
                 {errors.firstname && <div className={ResponsiveContactFormStyle.responsiveErrorsStyle}> {errors.firstname.message} </div>}<br />
 
-          <label htmlFor="lastname"> Last Name </label><br />
+          <label htmlFor="lastname" style={secondState}> Last Name </label><br />
                 <input type="text" placeholder="Enter your last name" {...register("lastname", {required: {value: true, message: "Lastname field is required"}})} />
 
                 {errors.lastname && <div className={ResponsiveContactFormStyle.responsiveErrorsStyle}> {errors.lastname.message}</div>}<br />
 
-          <label htmlFor="email"> Email </label><br />
+          <label htmlFor="email" style={secondState}> Email </label><br />
                 <input type="email" placeholder="Enter you email" {...register("email", { required: { value: true, message: "Email field is required" } })} />
                 
                 {errors.email && <div className={ResponsiveContactFormStyle.responsiveErrorsStyle}> {errors.email.message} </div>}<br />
 
-          <label htmlFor="textarea"> Message </label><br />
+          <label htmlFor="textarea" style={secondState}> Message </label><br />
           <textarea
-            cols={40}
-            rows={5}
             placeholder="Type you message..."
             {...register("textarea", {required: {value: true, message: "Message field is required"}})}        
           ></textarea>
