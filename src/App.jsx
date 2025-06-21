@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../public/styles/App.css';
 import Navbar from './components/Navbar';
 import ResponsiveNav from './responsive_components/Responsivenav';
@@ -15,6 +15,18 @@ import Certifications from './components/Certifications';
 import Footer from './components/Footer';
 
 function App() {
+
+  useEffect(() => {
+  
+    const handelRightClick = (e) => {
+    
+      e.preventDefault();   
+      
+    }
+
+    document.addEventListener('contextmenu', handelRightClick);
+  
+  }, [])
   
   return (
 

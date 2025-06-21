@@ -322,28 +322,28 @@ function Contact() {
 
                         <form onSubmit={handleSubmit(onSubmit)}>
 
-                            <label htmlFor='firstname'> First Name </label><br/><br/>
+                            <label> First Name </label><br/><br/>
                             <input type="text" placeholder='Enter Your First Name' {...register("firstname", { required: { value: true, message: "Firstname is required" }, maxLength: {value: 10, message: "Maxlength is 10"} })} /><br />
                             
                             {errors.firstname && <div className={ContactStyle.errorMessageStyle}>{errors.firstname.message}</div>}
 
                             <br />
                             
-                            <label htmlFor="lastname"> Last Name </label><br /><br />
+                            <label> Last Name </label><br /><br />
                             <input type="text" placeholder='Enter Your Last Name' {...register("lastname", { required: { value: true, message: "Lastname is required" }, maxLength: { value: 10, message: "Maxlength is 10" } })} /><br />
                             
                             {errors.lastname && <div className={ContactStyle.errorMessageStyle}>{errors.lastname.message}</div>}
 
                             <br />
                             
-                            <label htmlFor="email"> Email </label><br /><br />
+                            <label> Email </label><br /><br />
                             <input type="email" placeholder='Enter Your Email' {...register("email", { required: { value: true, message: "Email is required" }, maxlength: { value: 50, message: "Maxlength is 50" } })} /><br />
                             
                             {errors.email && <div className={ContactStyle.errorMessageStyle}>{errors.email.message}</div>}
 
                             <br />
                             
-                            <label htmlFor="textarea"> Message </label><br/><br/>
+                            <label> Message </label><br/><br/>
                             <textarea id="textarea" cols={53} rows={8} placeholder='Type Your Message...' {...register("textarea", { required: { value: true, message: "Message is required" } })}></textarea><br />
                             
                             {errors.textarea && <div className={ContactStyle.errorMessageStyle}>{errors.textarea.message}</div>}
