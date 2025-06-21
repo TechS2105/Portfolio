@@ -24,7 +24,15 @@ function App() {
       
     }
 
+    const handelCopyPest = (e) => {
+
+      e.preventDefault();
+
+    }
+
     document.addEventListener('contextmenu', handelRightClick);
+    document.addEventListener('copy', handelCopyPest);
+    document.addEventListener('pest', handelCopyPest);
   
   }, [])
   
