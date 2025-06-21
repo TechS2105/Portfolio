@@ -161,6 +161,19 @@ function Contact() {
 
     });
 
+    const [thirdState, setThirdState] = useState({
+
+        transform: "translateX(-1000px)",
+        filter: "blur(20px)"
+
+    });
+
+    const [fourthState, setFourthState] = useState({
+
+        transform: "scale(0)",
+
+    });
+
     function handelOnScrollMobileForm(){
 
         if (window.scrollY > 6500) {
@@ -168,7 +181,7 @@ function Contact() {
             setHandelMobileFormAnime({
 
                 transform: "scaleX(1)",
-                transition: "all 0.8s ease",
+                transition: "all 0.8s ease 0.3s",
 
             });
 
@@ -176,9 +189,24 @@ function Contact() {
 
                 transform: "translateX(0px)",
                 filter: "blur(0px)",
-                transition: `all 0.8s ease calc(0.8s / 2s)`
+                transition: `all 0.8s ease 0.5s`
 
             });
+
+            setThirdState({
+
+                transform: "translateX(0px)",
+                transition: "all 0.8s ease 0.8s",
+                filter: "blur(0px)"
+
+            });
+
+            setFourthState({
+
+                transform: "scale(1)",
+                transition: "all 0.8s ease 0.8s",
+
+            })
 
         } else {
             
@@ -193,7 +221,22 @@ function Contact() {
 
                 transform: "translateX(-500px)",
                 filter: "blur(20px)",
-                transition: "all 0.8s ease calc(0.8s / 2s)"
+                transition: "all 0.8s ease 0.5s",
+
+            });
+
+            setThirdState({
+
+                transform: "translateX(-1000px)",
+                transition: "all 0.8s ease",
+                filter: "blur(20px)",
+
+            });
+
+            setFourthState({
+
+                transform: "scale(0)",
+                transition: "all 0.8s ease",
 
             });
 
@@ -254,6 +297,8 @@ function Contact() {
                         onScroll={handelOnScrollMobileForm}
                         state={handelMobileFormAnime}
                         secondState={secondState}
+                        thirdState={thirdState}
+                        fourthState={fourthState}
                         
                     />
 

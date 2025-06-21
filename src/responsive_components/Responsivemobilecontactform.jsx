@@ -2,7 +2,7 @@ import React from 'react';
 import ResponsiveContactFormStyle from '../../public/styles/Responsive Style/Responsivecontactform.module.css';
 import { useForm } from 'react-hook-form';
 
-function ResponsiveMobileContactFrom({handelOnScrollMobileForm, state, secondState}) {
+function ResponsiveMobileContactFrom({handelOnScrollMobileForm, state, secondState, thirdState, fourthState}) {
 
     const {
 
@@ -32,31 +32,38 @@ function ResponsiveMobileContactFrom({handelOnScrollMobileForm, state, secondSta
       <div className={ResponsiveContactFormStyle.responsiveFormStyle} onScroll={handelOnScrollMobileForm}>
         <form onSubmit={handleSubmit(onSubmit)} style={state}>
           <label htmlFor="firstname" style={secondState}> First Name </label><br />
-                <input type="text" placeholder="Enter your first name" {...register("firstname", {required: {value: true, message: "Firstname field is required"}})} />
+                <input type="text" placeholder="Enter your first name" {...register("firstname", {required: {value: true, message: "Firstname field is required"}})} 
+                style={thirdState}
+                />
                 
                 {errors.firstname && <div className={ResponsiveContactFormStyle.responsiveErrorsStyle}> {errors.firstname.message} </div>}<br />
 
           <label htmlFor="lastname" style={secondState}> Last Name </label><br />
-                <input type="text" placeholder="Enter your last name" {...register("lastname", {required: {value: true, message: "Lastname field is required"}})} />
+                <input type="text" placeholder="Enter your last name" {...register("lastname", {required: {value: true, message: "Lastname field is required"}})} 
+                style={thirdState}
+                />
 
                 {errors.lastname && <div className={ResponsiveContactFormStyle.responsiveErrorsStyle}> {errors.lastname.message}</div>}<br />
 
           <label htmlFor="email" style={secondState}> Email </label><br />
-                <input type="email" placeholder="Enter you email" {...register("email", { required: { value: true, message: "Email field is required" } })} />
+                <input type="email" placeholder="Enter you email" {...register("email", { required: { value: true, message: "Email field is required" } })} 
+                style={thirdState}
+                />
                 
                 {errors.email && <div className={ResponsiveContactFormStyle.responsiveErrorsStyle}> {errors.email.message} </div>}<br />
 
           <label htmlFor="textarea" style={secondState}> Message </label><br />
           <textarea
             placeholder="Type you message..."
-            {...register("textarea", {required: {value: true, message: "Message field is required"}})}        
+            {...register("textarea", {required: {value: true, message: "Message field is required"}})} 
+            style={thirdState}
           ></textarea>
           
                 {errors.textarea && <div className={ResponsiveContactFormStyle.responsiveErrorsStyle}> {errors.textarea.message} </div>}
 
             {isSubmitting && <div className={ResponsiveContactFormStyle.responsiveErrorsStyle}> The form is Submitting... </div>}<br />
                 
-          <button type="submit"> Submit </button>
+          <button type="submit" style={fourthState}> Submit </button>
         </form>
 
         <div className={ResponsiveContactFormStyle.responsiveMapStyle}>
