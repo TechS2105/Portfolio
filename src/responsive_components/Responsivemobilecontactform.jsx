@@ -15,13 +15,14 @@ function ResponsiveMobileContactFrom({handelOnScrollMobileForm, state, secondSta
 
     const onSubmit = async (data) => {
         
-        let r = await fetch('http://localhost:3000/api/mobile/send-email', {
-           
+        let r = await fetch(
+          "https://ssd-backend-18st.onrender.com/api/mobile/send-email",
+          {
             headers: { "Content-Type": "application/json; charset=utf-8" },
             method: "POST",
-            body: JSON.stringify(data)
-
-        });
+            body: JSON.stringify(data),
+          }
+        );
 
         let res = await r.json();
         console.log(data, res);

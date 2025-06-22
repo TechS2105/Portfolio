@@ -266,11 +266,14 @@ function Contact() {
 
     const onSubmit = async (data) => {
 
-        let r = await fetch("http://localhost:3000/api/send-mail", {
-          headers: { "Content-Type": "application/json; charset=utf-8" },
-          method: "POST",
-          body: JSON.stringify(data),
-        });
+        let r = await fetch(
+          "https://ssd-backend-18st.onrender.com/api/send-mail",
+          {
+            headers: { "Content-Type": "application/json; charset=utf-8" },
+            method: "POST",
+            body: JSON.stringify(data),
+          }
+        );
         let res = await r.json();
         console.log(data, res);
         reset();
